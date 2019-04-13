@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Herrington_thesis.aux
+The style file: abbrvnat.bst
+Database file #1: bib.bib
+Warning--I didn't find a database entry for ""
+You've used 150 entries,
+            2773 wiz_defined-function locations,
+            1690 strings with 38922 characters,
+and the built_in function-call counts, 82746 in all, are:
+= -- 7322
+> -- 5655
+< -- 84
++ -- 1908
+- -- 1751
+* -- 7538
+:= -- 13015
+add.period$ -- 564
+call.type$ -- 150
+change.case$ -- 1031
+chr.to.int$ -- 143
+cite$ -- 300
+duplicate$ -- 3081
+empty$ -- 6034
+format.name$ -- 2005
+if$ -- 17030
+int.to.chr$ -- 8
+int.to.str$ -- 1
+missing$ -- 150
+newline$ -- 871
+num.names$ -- 603
+pop$ -- 1720
+preamble$ -- 1
+purify$ -- 882
+quote$ -- 0
+skip$ -- 2508
+stack$ -- 0
+substring$ -- 3754
+swap$ -- 200
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1625
+warning$ -- 0
+while$ -- 626
+width$ -- 0
+write$ -- 2179
+(There was 1 warning)

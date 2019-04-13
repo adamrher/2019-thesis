@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  12 APR 2019 20:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  13 APR 2019 09:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -280,6 +280,9 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 (./Herrington_thesis.aux
 
+LaTeX Warning: Label `fig:vomg' multiply defined.
+
+
 LaTeX Warning: Label `fig:mapping' multiply defined.
 
 )
@@ -410,7 +413,7 @@ l.61 \newpage
 
  [19] [20] [1] (./chapter1.tex)
 [2] (./chapter2.tex [3] [4] [5] [6] [7] [8] [9]
-<chapter2/table1.pdf, id=1023, 472.02461pt x 147.13239pt>
+<chapter2/table1.pdf, id=1028, 472.02461pt x 147.13239pt>
 File: chapter2/table1.pdf Graphic file (type pdf)
 <use chapter2/table1.pdf>
 Package pdftex.def Info: chapter2/table1.pdf  used on input line 55.
@@ -421,7 +424,7 @@ Overfull \hbox (10.24498pt too wide) in paragraph at lines 55--55
  []
 
 [10] [11 <./chapter2/table1.pdf>] [12]
-<chapter2/table2.pdf, id=1128, 471.75598pt x 371.79591pt>
+<chapter2/table2.pdf, id=1133, 471.75598pt x 371.79591pt>
 File: chapter2/table2.pdf Graphic file (type pdf)
 <use chapter2/table2.pdf>
 Package pdftex.def Info: chapter2/table2.pdf  used on input line 77.
@@ -432,20 +435,20 @@ Overfull \hbox (10.24498pt too wide) in paragraph at lines 77--77
  []
 
 [13 <./chapter2/table2.pdf>] [14]
-<chapter2/figure1.pdf, id=1171, 287.7446pt x 526.05457pt>
+<chapter2/figure1.pdf, id=1176, 287.7446pt x 526.05457pt>
 File: chapter2/figure1.pdf Graphic file (type pdf)
 <use chapter2/figure1.pdf>
 Package pdftex.def Info: chapter2/figure1.pdf  used on input line 100.
 (pdftex.def)             Requested size: 240.0pt x 438.77638pt.
  [15] [16 <./chapter2/figure1.pdf>] [17]
-<chapter2/figure2.pdf, id=1215, 301.65367pt x 548.42905pt>
+<chapter2/figure2.pdf, id=1220, 301.65367pt x 548.42905pt>
 File: chapter2/figure2.pdf Graphic file (type pdf)
 <use chapter2/figure2.pdf>
 Package pdftex.def Info: chapter2/figure2.pdf  used on input line 126.
 (pdftex.def)             Requested size: 240.0pt x 436.35048pt.
 
 [18] [19 <./chapter2/figure2.pdf>] [20]
-<chapter2/figure3.pdf, id=1275, 469.7281pt x 689.93243pt>
+<chapter2/figure3.pdf, id=1280, 469.7281pt x 689.93243pt>
 File: chapter2/figure3.pdf Graphic file (type pdf)
 <use chapter2/figure3.pdf>
 Package pdftex.def Info: chapter2/figure3.pdf  used on input line 149.
@@ -455,32 +458,32 @@ Package pdftex.def Info: chapter2/figure3.pdf  used on input line 149.
 LaTeX Warning: Float too large for page by 5.16843pt on input line 153.
 
 [21] [22 <./chapter2/figure3.pdf>]
-<chapter2/figure4.pdf, id=1314, 300.35513pt x 546.04913pt>
+<chapter2/figure4.pdf, id=1319, 300.35513pt x 546.04913pt>
 File: chapter2/figure4.pdf Graphic file (type pdf)
 <use chapter2/figure4.pdf>
 Package pdftex.def Info: chapter2/figure4.pdf  used on input line 161.
 (pdftex.def)             Requested size: 240.0pt x 436.33163pt.
  [23] [24 <./chapter2/figure4.pdf>] [25]
-<chapter2/table3.pdf, id=1368, 232.07236pt x 45.25989pt>
+<chapter2/table3.pdf, id=1373, 232.07236pt x 45.25989pt>
 File: chapter2/table3.pdf Graphic file (type pdf)
 <use chapter2/table3.pdf>
 Package pdftex.def Info: chapter2/table3.pdf  used on input line 184.
 (pdftex.def)             Requested size: 240.0pt x 46.80742pt.
 
 [26]
-<chapter2/figure5.pdf, id=1393, 508.47552pt x 484.6432pt>
+<chapter2/figure5.pdf, id=1398, 508.47552pt x 484.6432pt>
 File: chapter2/figure5.pdf Graphic file (type pdf)
 <use chapter2/figure5.pdf>
 Package pdftex.def Info: chapter2/figure5.pdf  used on input line 198.
 (pdftex.def)             Requested size: 240.0pt x 228.75108pt.
-<chapter2/figure6.pdf, id=1394, 543.02875pt x 661.47125pt>
+<chapter2/figure6.pdf, id=1399, 543.02875pt x 661.47125pt>
 File: chapter2/figure6.pdf Graphic file (type pdf)
 <use chapter2/figure6.pdf>
 Package pdftex.def Info: chapter2/figure6.pdf  used on input line 206.
 (pdftex.def)             Requested size: 420.0pt x 511.6256pt.
  [27 <./chapter2/table3.pdf>] [28 <./chapter2/figure5.pdf>] [29 <./chapter2/fig
 ure6.pdf>]
-<chapter2/figure7.pdf, id=1464, 284.28758pt x 535.07043pt>
+<chapter2/figure7.pdf, id=1469, 284.28758pt x 535.07043pt>
 File: chapter2/figure7.pdf Graphic file (type pdf)
 <use chapter2/figure7.pdf>
 Package pdftex.def Info: chapter2/figure7.pdf  used on input line 218.
@@ -500,7 +503,7 @@ Package epstopdf Info: Source file: <chapter3/Figure1.eps>
 rted-to.pdf chapter3/Figure1.eps>
 (epstopdf)             \includegraphics on input line 10.
 Package epstopdf Info: Output file is already uptodate.
-<chapter3/Figure1-eps-converted-to.pdf, id=1616, 543.02875pt x 661.47125pt>
+<chapter3/Figure1-eps-converted-to.pdf, id=1621, 543.02875pt x 661.47125pt>
 File: chapter3/Figure1-eps-converted-to.pdf Graphic file (type pdf)
 <use chapter3/Figure1-eps-converted-to.pdf>
 Package pdftex.def Info: chapter3/Figure1-eps-converted-to.pdf  used on input l
@@ -508,7 +511,7 @@ ine 10.
 (pdftex.def)             Requested size: 300.0pt x 365.44542pt.
  [35]
 [36 <./chapter3/Figure1-eps-converted-to.pdf>] [37] [38]
-<chapter3/table1.pdf, id=1691, 262.79347pt x 65.05795pt>
+<chapter3/table1.pdf, id=1696, 262.79347pt x 65.05795pt>
 File: chapter3/table1.pdf Graphic file (type pdf)
 <use chapter3/table1.pdf>
 Package pdftex.def Info: chapter3/table1.pdf  used on input line 40.
@@ -524,67 +527,67 @@ Package epstopdf Info: Source file: <chapter3/Figure2.eps>
 rted-to.pdf chapter3/Figure2.eps>
 (epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
-<chapter3/Figure2-eps-converted-to.pdf, id=1848, 509.905pt x 305.14pt>
+<chapter3/Figure2-eps-converted-to.pdf, id=1853, 509.905pt x 305.14pt>
 File: chapter3/Figure2-eps-converted-to.pdf Graphic file (type pdf)
 <use chapter3/Figure2-eps-converted-to.pdf>
 Package pdftex.def Info: chapter3/Figure2-eps-converted-to.pdf  used on input l
 ine 65.
 (pdftex.def)             Requested size: 300.0pt x 179.53748pt.
  [42] [43 <./chapter3/Figure2-eps-converted-to.pdf>]
-<chapter3/table2.pdf, id=1873, 260.72856pt x 55.8082pt>
+<chapter3/table2.pdf, id=1878, 260.72856pt x 55.8082pt>
 File: chapter3/table2.pdf Graphic file (type pdf)
 <use chapter3/table2.pdf>
 Package pdftex.def Info: chapter3/table2.pdf  used on input line 98.
 (pdftex.def)             Requested size: 300.0pt x 64.21552pt.
  [44]
-<chapter3/table3.pdf, id=1890, 260.6912pt x 135.43158pt>
+<chapter3/table3.pdf, id=1895, 260.6912pt x 135.43158pt>
 File: chapter3/table3.pdf Graphic file (type pdf)
 <use chapter3/table3.pdf>
 Package pdftex.def Info: chapter3/table3.pdf  used on input line 110.
 (pdftex.def)             Requested size: 240.0pt x 124.68329pt.
-<chapter3/Figure3_crop.pdf, id=1893, 290.4445pt x 542.025pt>
+<chapter3/Figure3_crop.pdf, id=1898, 290.4445pt x 542.025pt>
 File: chapter3/Figure3_crop.pdf Graphic file (type pdf)
 <use chapter3/Figure3_crop.pdf>
 Package pdftex.def Info: chapter3/Figure3_crop.pdf  used on input line 118.
 (pdftex.def)             Requested size: 240.0pt x 447.8874pt.
 
 [45 <./chapter3/table2.pdf>] [46 <./chapter3/Figure3_crop.pdf>]
-<chapter3/Figure4_crop.pdf, id=1978, 531.90834pt x 390.18102pt>
+<chapter3/Figure4_crop.pdf, id=1983, 531.90834pt x 390.18102pt>
 File: chapter3/Figure4_crop.pdf Graphic file (type pdf)
 <use chapter3/Figure4_crop.pdf>
 Package pdftex.def Info: chapter3/Figure4_crop.pdf  used on input line 130.
 (pdftex.def)             Requested size: 300.0pt x 220.05974pt.
  [47 <./chapter3/table3.pdf>]
-<chapter3/Figure5_crop.pdf, id=2048, 347.5148pt x 329.14267pt>
+<chapter3/Figure5_crop.pdf, id=2053, 347.5148pt x 329.14267pt>
 File: chapter3/Figure5_crop.pdf Graphic file (type pdf)
 <use chapter3/Figure5_crop.pdf>
 Package pdftex.def Info: chapter3/Figure5_crop.pdf  used on input line 143.
 (pdftex.def)             Requested size: 240.0pt x 227.31961pt.
  [48 <./chapter3/Figure4_crop.pdf>] [49 <./chapter3/Figure5_crop.pdf>]
-<chapter3/Figure6_crop.pdf, id=2087, 266.87645pt x 525.39818pt>
+<chapter3/Figure6_crop.pdf, id=2092, 266.87645pt x 525.39818pt>
 File: chapter3/Figure6_crop.pdf Graphic file (type pdf)
 <use chapter3/Figure6_crop.pdf>
 Package pdftex.def Info: chapter3/Figure6_crop.pdf  used on input line 158.
 (pdftex.def)             Requested size: 240.0pt x 472.48521pt.
-<chapter3/Figure7_crop.pdf, id=2102, 274.63312pt x 259.6307pt>
+<chapter3/Figure7_crop.pdf, id=2107, 274.63312pt x 259.6307pt>
 File: chapter3/Figure7_crop.pdf Graphic file (type pdf)
 <use chapter3/Figure7_crop.pdf>
 Package pdftex.def Info: chapter3/Figure7_crop.pdf  used on input line 171.
 (pdftex.def)             Requested size: 240.0pt x 226.89502pt.
  [50] [51 <./chapter3/Figure6_crop.pdf>] [52 <./chapter3/Figure7_crop.pdf>]
-<chapter3/Figure8_crop.pdf, id=2151, 409.24776pt x 262.7674pt>
+<chapter3/Figure8_crop.pdf, id=2156, 409.24776pt x 262.7674pt>
 File: chapter3/Figure8_crop.pdf Graphic file (type pdf)
 <use chapter3/Figure8_crop.pdf>
 Package pdftex.def Info: chapter3/Figure8_crop.pdf  used on input line 183.
 (pdftex.def)             Requested size: 300.0pt x 192.63252pt.
 [53 <./chapter3/Figure8_crop.pdf>]
-<chapter3/Figure9_crop.pdf, id=2171, 521.68527pt x 199.87161pt>
+<chapter3/Figure9_crop.pdf, id=2176, 521.68527pt x 199.87161pt>
 File: chapter3/Figure9_crop.pdf Graphic file (type pdf)
 <use chapter3/Figure9_crop.pdf>
 Package pdftex.def Info: chapter3/Figure9_crop.pdf  used on input line 194.
 (pdftex.def)             Requested size: 420.0pt x 160.91917pt.
  [54 <./chapter3/Figure9_crop.pdf>] [55]
-<chapter3/Figure10_crop.pdf, id=2226, 430.20995pt x 391.09955pt>
+<chapter3/Figure10_crop.pdf, id=2231, 430.20995pt x 391.09955pt>
 File: chapter3/Figure10_crop.pdf Graphic file (type pdf)
 <use chapter3/Figure10_crop.pdf>
 Package pdftex.def Info: chapter3/Figure10_crop.pdf  used on input line 215.
@@ -601,14 +604,14 @@ Package epstopdf Info: Source file: <chapter3/SFigure1.eps>
 erted-to.pdf chapter3/SFigure1.eps>
 (epstopdf)             \includegraphics on input line 244.
 Package epstopdf Info: Output file is already uptodate.
-<chapter3/SFigure1-eps-converted-to.pdf, id=2330, 542.025pt x 542.025pt>
+<chapter3/SFigure1-eps-converted-to.pdf, id=2335, 542.025pt x 542.025pt>
 File: chapter3/SFigure1-eps-converted-to.pdf Graphic file (type pdf)
 <use chapter3/SFigure1-eps-converted-to.pdf>
 Package pdftex.def Info: chapter3/SFigure1-eps-converted-to.pdf  used on input 
 line 244.
 (pdftex.def)             Requested size: 300.0pt x 300.00864pt.
  [61]
-<chapter3/SFigure2_crop.pdf, id=2335, 343.79556pt x 326.89548pt>
+<chapter3/SFigure2_crop.pdf, id=2340, 343.79556pt x 326.89548pt>
 File: chapter3/SFigure2_crop.pdf Graphic file (type pdf)
 <use chapter3/SFigure2_crop.pdf>
 Package pdftex.def Info: chapter3/SFigure2_crop.pdf  used on input line 252.
@@ -616,20 +619,20 @@ Package pdftex.def Info: chapter3/SFigure2_crop.pdf  used on input line 252.
 ) [62 <./chapter3/SFigure1-eps-converted-to.pdf>] [63 <./chapter3/SFigure2_crop
 .pdf>]
 (./chapter4.tex
-<chapter4/gll.pdf, id=2395, 876.84938pt x 845.3949pt>
+<chapter4/gll.pdf, id=2400, 876.84938pt x 845.3949pt>
 File: chapter4/gll.pdf Graphic file (type pdf)
 <use chapter4/gll.pdf>
 Package pdftex.def Info: chapter4/gll.pdf  used on input line 6.
 (pdftex.def)             Requested size: 300.0pt x 289.23642pt.
  [64] [65 <./chapter4/gll.pdf>] [66]
-<chapter4/se-schematic-arh-CROP.pdf, id=2479, 554.78023pt x 370.65266pt>
+<chapter4/se-schematic-arh-CROP.pdf, id=2484, 554.78023pt x 370.65266pt>
 File: chapter4/se-schematic-arh-CROP.pdf Graphic file (type pdf)
 <use chapter4/se-schematic-arh-CROP.pdf>
 Package pdftex.def Info: chapter4/se-schematic-arh-CROP.pdf  used on input line
  27.
 (pdftex.def)             Requested size: 420.0pt x 280.61871pt.
  [67] [68 <./chapter4/se-schematic-arh-CROP.pdf>]
-<chapter4/temp_pdf_200bins_30min_trX25min.pdf, id=2504, 546.23047pt x 261.98096
+<chapter4/temp_pdf_200bins_30min_trX25min.pdf, id=2509, 546.23047pt x 261.98096
 pt>
 File: chapter4/temp_pdf_200bins_30min_trX25min.pdf Graphic file (type pdf)
 <use chapter4/temp_pdf_200bins_30min_trX25min.pdf>
@@ -637,7 +640,7 @@ Package pdftex.def Info: chapter4/temp_pdf_200bins_30min_trX25min.pdf  used on
 input line 37.
 (pdftex.def)             Requested size: 420.0pt x 201.44212pt.
  [69 <./chapter4/temp_pdf_200bins_30min_trX25min.pdf>]
-<chapter4/se_gll_cv_grid-eps-converted-to.pdf, id=2521, 361.35pt x 368.37625pt>
+<chapter4/se_gll_cv_grid-eps-converted-to.pdf, id=2526, 361.35pt x 368.37625pt>
 
 File: chapter4/se_gll_cv_grid-eps-converted-to.pdf Graphic file (type pdf)
 <use chapter4/se_gll_cv_grid-eps-converted-to.pdf>
@@ -646,43 +649,43 @@ input line 46.
 (pdftex.def)             Requested size: 180.0pt x 183.5019pt.
 
 [70] [71 <./chapter4/se_gll_cv_grid-eps-converted-to.pdf>]
-<chapter4/np4_pg3.pdf, id=2538, 730.73pt x 418.56375pt>
+<chapter4/np4_pg3.pdf, id=2543, 730.73pt x 418.56375pt>
 File: chapter4/np4_pg3.pdf Graphic file (type pdf)
 <use chapter4/np4_pg3.pdf>
 Package pdftex.def Info: chapter4/np4_pg3.pdf  used on input line 59.
 (pdftex.def)             Requested size: 300.0pt x 171.84216pt.
  [72 <./chapter4/np4_pg3.pdf>] [73] [74] [75] [76] [77]
-<chapter4/temp_l2.pdf, id=2639, 519.3532pt x 493.35657pt>
+<chapter4/temp_l2.pdf, id=2645, 519.3532pt x 493.35657pt>
 File: chapter4/temp_l2.pdf Graphic file (type pdf)
 <use chapter4/temp_l2.pdf>
 Package pdftex.def Info: chapter4/temp_l2.pdf  used on input line 118.
 (pdftex.def)             Requested size: 240.0pt x 227.98564pt.
  [78 <./chapter4/temp_l2.pdf>]
-<chapter4/terminator_iCLy.pdf, id=2660, 425.48474pt x 492.70905pt>
+<chapter4/terminator_iCLy.pdf, id=2665, 425.48474pt x 492.70905pt>
 File: chapter4/terminator_iCLy.pdf Graphic file (type pdf)
 <use chapter4/terminator_iCLy.pdf>
 Package pdftex.def Info: chapter4/terminator_iCLy.pdf  used on input line 128.
 (pdftex.def)             Requested size: 300.0pt x 347.40503pt.
-<chapter4/temp_dzonal.pdf, id=2667, 390.81729pt x 261.74356pt>
+<chapter4/temp_dzonal.pdf, id=2672, 390.81729pt x 261.74356pt>
 File: chapter4/temp_dzonal.pdf Graphic file (type pdf)
 <use chapter4/temp_dzonal.pdf>
 Package pdftex.def Info: chapter4/temp_dzonal.pdf  used on input line 140.
 (pdftex.def)             Requested size: 240.0pt x 160.73767pt.
  [79 <./chapter4/terminator_iCLy.pdf>] [80 <./chapter4/temp_dzonal.pdf>]
-<chapter4/QPC4_bar_skk.pdf, id=2704, 546.80856pt x 344.52374pt>
+<chapter4/QPC4_bar_skk.pdf, id=2709, 546.80856pt x 344.52374pt>
 File: chapter4/QPC4_bar_skk.pdf Graphic file (type pdf)
 <use chapter4/QPC4_bar_skk.pdf>
 Package pdftex.def Info: chapter4/QPC4_bar_skk.pdf  used on input line 156.
 (pdftex.def)             Requested size: 360.0pt x 226.82912pt.
  [81] [82 <./chapter4/QPC4_bar_skk.pdf>]
-<chapter4/FHS-contours-CROP.pdf, id=2734, 547.32158pt x 387.92027pt>
+<chapter4/FHS-contours-CROP.pdf, id=2739, 547.32158pt x 387.92027pt>
 File: chapter4/FHS-contours-CROP.pdf Graphic file (type pdf)
 <use chapter4/FHS-contours-CROP.pdf>
 Package pdftex.def Info: chapter4/FHS-contours-CROP.pdf  used on input line 170
 .
 (pdftex.def)             Requested size: 360.0pt x 255.15211pt.
  [83 <./chapter4/FHS-contours-CROP.pdf>]
-<chapter4/AMIP_regional.pdf, id=2757, 549.49713pt x 391.6261pt>
+<chapter4/AMIP_regional.pdf, id=2762, 549.49713pt x 391.6261pt>
 File: chapter4/AMIP_regional.pdf Graphic file (type pdf)
 <use chapter4/AMIP_regional.pdf>
 Package pdftex.def Info: chapter4/AMIP_regional.pdf  used on input line 184.
@@ -695,14 +698,14 @@ L/cmm/m/it/12 climo$
  []
 
 [84]
-<chapter4/AMIP_global.pdf, id=2770, 240.72084pt x 531.01738pt>
+<chapter4/AMIP_global.pdf, id=2775, 240.72084pt x 531.01738pt>
 File: chapter4/AMIP_global.pdf Graphic file (type pdf)
 <use chapter4/AMIP_global.pdf>
 Package pdftex.def Info: chapter4/AMIP_global.pdf  used on input line 194.
 (pdftex.def)             Requested size: 168.0pt x 370.59955pt.
  [85 <./chapter4/AMIP_regional.pdf>] [86 <./chapter4/AMIP_global.pdf>]
 [87]) [88] (./chapter5.tex [89] [90] [91] [92]
-<chapter5/fig-overview.pdf, id=2893, 536.57887pt x 344.57072pt>
+<chapter5/fig-overview.pdf, id=2898, 536.57887pt x 344.57072pt>
 File: chapter5/fig-overview.pdf Graphic file (type pdf)
 <use chapter5/fig-overview.pdf>
 Package pdftex.def Info: chapter5/fig-overview.pdf  used on input line 27.
@@ -732,7 +735,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 52.
 
-<chapter5/area-schematic.png, id=3024, 1991.44pt x 948.54375pt>
+<chapter5/area-schematic.png, id=3029, 1991.44pt x 948.54375pt>
 File: chapter5/area-schematic.png Graphic file (type png)
 <use chapter5/area-schematic.png>
 Package pdftex.def Info: chapter5/area-schematic.png  used on input line 57.
@@ -763,7 +766,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 92.
 
 [97] [98] [99]
-<chapter5/alg-schematic.png, id=3094, 3319.40125pt x 948.54375pt>
+<chapter5/alg-schematic.png, id=3099, 3319.40125pt x 948.54375pt>
 File: chapter5/alg-schematic.png Graphic file (type png)
 <use chapter5/alg-schematic.png>
 Package pdftex.def Info: chapter5/alg-schematic.png  used on input line 142.
@@ -774,7 +777,7 @@ Overfull \hbox (10.24498pt too wide) in paragraph at lines 142--142
  []
 
 [100] [101 <./chapter5/alg-schematic.png>] [102]
-<chapter5/mapping.pdf, id=3129, 748.53903pt x 412.52048pt>
+<chapter5/mapping.pdf, id=3135, 748.53903pt x 412.52048pt>
 File: chapter5/mapping.pdf Graphic file (type pdf)
 <use chapter5/mapping.pdf>
 Package pdftex.def Info: chapter5/mapping.pdf  used on input line 197.
@@ -786,19 +789,19 @@ Overfull \hbox (10.24498pt too wide) in paragraph at lines 197--197
 
 [103] [104 <./chapter5/mapping.pdf, page is rotated 270 degrees>] [105]
 [106] [107]
-<chapter5/temp_CLDLIQ.pdf, id=3290, 538.08168pt x 366.12012pt>
+<chapter5/temp_CLDLIQ.pdf, id=3295, 538.08168pt x 366.12012pt>
 File: chapter5/temp_CLDLIQ.pdf Graphic file (type pdf)
 <use chapter5/temp_CLDLIQ.pdf>
 Package pdftex.def Info: chapter5/temp_CLDLIQ.pdf  used on input line 255.
 (pdftex.def)             Requested size: 300.0pt x 204.12643pt.
  [108 <./chapter5/temp_CLDLIQ.pdf>]
-<chapter5/temp_terminator.pdf, id=3306, 426.71475pt x 495.24535pt>
+<chapter5/temp_terminator.pdf, id=3311, 426.71475pt x 495.24535pt>
 File: chapter5/temp_terminator.pdf Graphic file (type pdf)
 <use chapter5/temp_terminator.pdf>
 Package pdftex.def Info: chapter5/temp_terminator.pdf  used on input line 265.
 (pdftex.def)             Requested size: 240.0pt x 278.54459pt.
  [109 <./chapter5/temp_terminator.pdf>] [110]
-<chapter5/fhstopo_ne30pg2-v-ne30pg3-v-10Xnudiv.pdf, id=3332, 546.14795pt x 390.
+<chapter5/fhstopo_ne30pg2-v-ne30pg3-v-10Xnudiv.pdf, id=3337, 546.14795pt x 390.
 19397pt>
 File: chapter5/fhstopo_ne30pg2-v-ne30pg3-v-10Xnudiv.pdf Graphic file (type pdf)
 
@@ -807,7 +810,7 @@ Package pdftex.def Info: chapter5/fhstopo_ne30pg2-v-ne30pg3-v-10Xnudiv.pdf  use
 d on input line 282.
 (pdftex.def)             Requested size: 360.0pt x 257.20729pt.
  [111 <./chapter5/fhstopo_ne30pg2-v-ne30pg3-v-10Xnudiv.pdf>]
-<chapter5/fhstopo_Divergence_ne30pg2-v-ne30pg3-v-10Xnudiv.pdf, id=3346, 521.008
+<chapter5/fhstopo_Divergence_ne30pg2-v-ne30pg3-v-10Xnudiv.pdf, id=3351, 521.008
 93pt x 521.19388pt>
 File: chapter5/fhstopo_Divergence_ne30pg2-v-ne30pg3-v-10Xnudiv.pdf Graphic file
  (type pdf)
@@ -821,13 +824,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
  []
 
-<chapter5/panel_transGLL.pdf, id=3398, 544.5411pt x 530.47968pt>
+<chapter5/panel_transGLL.pdf, id=3403, 544.5411pt x 530.47968pt>
 File: chapter5/panel_transGLL.pdf Graphic file (type pdf)
 <use chapter5/panel_transGLL.pdf>
 Package pdftex.def Info: chapter5/panel_transGLL.pdf  used on input line 334.
 (pdftex.def)             Requested size: 360.0pt x 350.70856pt.
 [114] [115 <./chapter5/panel_transGLL.pdf>]
-<chapter5/panel_ne20pg2-ne30pg2-ne30pg3.pdf, id=3427, 547.8952pt x 184.11635pt>
+<chapter5/panel_ne20pg2-ne30pg2-ne30pg3.pdf, id=3432, 547.8952pt x 184.11635pt>
 
 File: chapter5/panel_ne20pg2-ne30pg2-ne30pg3.pdf Graphic file (type pdf)
 <use chapter5/panel_ne20pg2-ne30pg2-ne30pg3.pdf>
@@ -845,7 +848,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 362--363
  []
 
 [118]
-<chapter5/panel_ne80pg3_ne120pg2_ne120pg3.pdf, id=3461, 546.29094pt x 183.71306
+<chapter5/panel_ne80pg3_ne120pg2_ne120pg3.pdf, id=3466, 546.29094pt x 183.71306
 pt>
 File: chapter5/panel_ne80pg3_ne120pg2_ne120pg3.pdf Graphic file (type pdf)
 <use chapter5/panel_ne80pg3_ne120pg2_ne120pg3.pdf>
@@ -863,7 +866,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 393--394
  []
 
 [120]
-<chapter5/panel_diags.pdf, id=3493, 413.731pt x 148.34662pt>
+<chapter5/panel_diags.pdf, id=3498, 413.731pt x 148.34662pt>
 File: chapter5/panel_diags.pdf Graphic file (type pdf)
 <use chapter5/panel_diags.pdf>
 Package pdftex.def Info: chapter5/panel_diags.pdf  used on input line 414.
@@ -874,13 +877,13 @@ Package natbib Warning: Citation `HETAL2019JAMES' on page 125 undefined on inpu
 t line 11.
 
 [125]
-<chapter6/temp_2pdf.pdf, id=3577, 545.91232pt x 254.93684pt>
+<chapter6/temp_2pdf.pdf, id=3583, 545.91232pt x 254.93684pt>
 File: chapter6/temp_2pdf.pdf Graphic file (type pdf)
 <use chapter6/temp_2pdf.pdf>
 Package pdftex.def Info: chapter6/temp_2pdf.pdf  used on input line 21.
 (pdftex.def)             Requested size: 360.0pt x 168.1149pt.
  [126 <./chapter6/temp_2pdf.pdf>]
-<chapter6/temp_diags_8panel.pdf, id=3594, 542.05417pt x 254.14368pt>
+<chapter6/temp_diags_8panel.pdf, id=3600, 542.05417pt x 254.14368pt>
 File: chapter6/temp_diags_8panel.pdf Graphic file (type pdf)
 <use chapter6/temp_diags_8panel.pdf>
 Package pdftex.def Info: chapter6/temp_diags_8panel.pdf  used on input line 35.
@@ -891,28 +894,38 @@ Overfull \hbox (10.24498pt too wide) in paragraph at lines 35--35
  [] 
  []
 
-[127 <./chapter6/temp_diags_8panel.pdf>] [128]
-<chapter6/temp_zonal_fracd*vomgd.pdf, id=3617, 391.73804pt x 501.54114pt>
+[127 <./chapter6/temp_diags_8panel.pdf>]
+<chapter6/temp_cape.pdf, id=3616, 545.93022pt x 256.12437pt>
+File: chapter6/temp_cape.pdf Graphic file (type pdf)
+<use chapter6/temp_cape.pdf>
+Package pdftex.def Info: chapter6/temp_cape.pdf  used on input line 45.
+(pdftex.def)             Requested size: 240.0pt x 112.59735pt.
+ [128 <./chapter6/temp_cape.pdf>]
+<chapter6/temp_zonal_fracd*vomgd.pdf, id=3630, 391.73804pt x 501.54114pt>
 File: chapter6/temp_zonal_fracd*vomgd.pdf Graphic file (type pdf)
 <use chapter6/temp_zonal_fracd*vomgd.pdf>
 Package pdftex.def Info: chapter6/temp_zonal_fracd*vomgd.pdf  used on input lin
-e 54.
+e 57.
 (pdftex.def)             Requested size: 240.0pt x 307.27124pt.
-<chapter6/temp_zonal_4reg_dwn.pdf, id=3621, 263.69264pt x 498.08405pt>
+
+
+LaTeX Warning: Reference `fig:cape' on page 129 undefined on input line 63.
+
+
+LaTeX Warning: Reference `fig:cape' on page 129 undefined on input line 63.
+
+
+LaTeX Warning: Reference `fig:cape' on page 129 undefined on input line 63.
+
+[129 <./chapter6/temp_zonal_fracd*vomgd.pdf>]
+<chapter6/temp_zonal_4reg_dwn.pdf, id=3642, 263.69264pt x 498.08405pt>
 File: chapter6/temp_zonal_4reg_dwn.pdf Graphic file (type pdf)
 <use chapter6/temp_zonal_4reg_dwn.pdf>
 Package pdftex.def Info: chapter6/temp_zonal_4reg_dwn.pdf  used on input line 6
-4.
+7.
 (pdftex.def)             Requested size: 168.0pt x 317.33627pt.
- [129 <./chapter6/temp_zonal_fracd*vomgd.pdf>]
-<chapter6/temp_cape.pdf, id=3636, 545.93022pt x 256.12437pt>
-File: chapter6/temp_cape.pdf Graphic file (type pdf)
-<use chapter6/temp_cape.pdf>
-Package pdftex.def Info: chapter6/temp_cape.pdf  used on input line 74.
-(pdftex.def)             Requested size: 300.0pt x 140.74768pt.
-) [130 <./chapter6/temp_zonal_4reg_dwn.pdf>] [131 <./chapter6/temp_cape.pdf>] (
-./appendix.tex
-<chapter4/mapping.pdf, id=3665, 215.05391pt x 209.76802pt>
+ [130 <./chapter6/temp_zonal_4reg_dwn.pdf>]) [131] [132] (./appendix.tex
+<chapter4/mapping.pdf, id=3673, 215.05391pt x 209.76802pt>
 File: chapter4/mapping.pdf Graphic file (type pdf)
 <use chapter4/mapping.pdf>
 Package pdftex.def Info: chapter4/mapping.pdf  used on input line 16.
@@ -934,39 +947,48 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 22.
 
-[132] [133 <./chapter4/mapping.pdf>]
-<chapter5/bubble_test.pdf, id=3707, 318.51808pt x 323.30608pt>
+[133] [134 <./chapter4/mapping.pdf>]
+<chapter5/bubble_test.pdf, id=3715, 318.51808pt x 323.30608pt>
 File: chapter5/bubble_test.pdf Graphic file (type pdf)
 <use chapter5/bubble_test.pdf>
 Package pdftex.def Info: chapter5/bubble_test.pdf  used on input line 29.
 (pdftex.def)             Requested size: 240.0pt x 243.60867pt.
- [134 <./chapter5/bubble_test.pdf>]
-<chapter5/panel_pdf_dtphys.pdf, id=3729, 432.21745pt x 207.24084pt>
+ [135 <./chapter5/bubble_test.pdf>]
+<chapter5/panel_pdf_dtphys.pdf, id=3737, 432.21745pt x 207.24084pt>
 File: chapter5/panel_pdf_dtphys.pdf Graphic file (type pdf)
 <use chapter5/panel_pdf_dtphys.pdf>
 Package pdftex.def Info: chapter5/panel_pdf_dtphys.pdf  used on input line 41.
 (pdftex.def)             Requested size: 240.0pt x 115.07693pt.
 
-[135 <./chapter5/panel_pdf_dtphys.pdf>]
-<chapter5/panel_loworder.pdf, id=3743, 531.40268pt x 282.21727pt>
+[136 <./chapter5/panel_pdf_dtphys.pdf>]
+<chapter5/panel_loworder.pdf, id=3752, 531.40268pt x 282.21727pt>
 File: chapter5/panel_loworder.pdf Graphic file (type pdf)
 <use chapter5/panel_loworder.pdf>
 Package pdftex.def Info: chapter5/panel_loworder.pdf  used on input line 55.
 (pdftex.def)             Requested size: 360.0pt x 191.19466pt.
- [136 <./chapter5/panel_loworder.pdf>])
-[137] (./Herrington_thesis.bbl [138] [139] [140] [141] [142] [143] [144]
-[145] [146] [147] [148] [149] [150] [151] [152] [153])
+ [137 <./chapter5/panel_loworder.pdf>])
+[138] (./Herrington_thesis.bbl [139] [140] [141] [142] [143] [144] [145]
+[146] [147] [148] [149] [150] [151] [152] [153] [154])
 
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
-[154]
+[155]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
  (./Herrington_thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
-Package rerunfilecheck Info: File `Herrington_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 27149AAD76439FE4C5C43C1FF6C249EB;5261.
+
+
+Package rerunfilecheck Warning: File `Herrington_thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Herrington_thesis.out':
+(rerunfilecheck)             Before: ACD1177D6952AC3C89668E4AB11073C1;5337
+(rerunfilecheck)             After:  0F6B616DE64E2F2D8D27FA578972C149;5337.
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -978,13 +1000,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 253.
 ### simple group (level 1) entered at line 164 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8004 strings out of 492649
- 121101 string characters out of 6129622
- 265518 words of memory out of 5000000
+ 8006 strings out of 492649
+ 121128 string characters out of 6129622
+ 266574 words of memory out of 5000000
  11206 multiletter control sequences out of 15000+600000
  11925 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,11n,32p,1870b,794s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,11n,32p,1870b,795s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
@@ -1003,10 +1025,10 @@ r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
 ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
 al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loca
 l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Herrington_thesis.pdf (175 pages, 59014080 bytes).
+Output written on Herrington_thesis.pdf (176 pages, 59017111 bytes).
 PDF statistics:
- 4029 PDF objects out of 4296 (max. 8388607)
- 3536 compressed objects within 36 object streams
- 529 named destinations out of 1000 (max. 500000)
- 811 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4037 PDF objects out of 4296 (max. 8388607)
+ 3543 compressed objects within 36 object streams
+ 531 named destinations out of 1000 (max. 500000)
+ 819 words of extra memory for PDF output out of 10000 (max. 10000000)
 

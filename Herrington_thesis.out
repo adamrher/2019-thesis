@@ -60,6 +60,7 @@
 \BOOKMARK [2][-]{subsection.6.1}{Introduction}{section.6}% 60
 \BOOKMARK [2][-]{subsection.6.2}{Methods}{section.6}% 61
 \BOOKMARK [2][-]{subsection.6.3}{Results}{section.6}% 62
-\BOOKMARK [1][-]{figure.48}{Conclusions}{}% 63
-\BOOKMARK [2][-]{subsection.Alph0.1}{Defining tphys across resolutions}{figure.48}% 64
-\BOOKMARK [2][-]{subsection.Alph0.2}{The impact of high-order mapping to the dynamics grids}{figure.48}% 65
+\BOOKMARK [2][-]{subsection.6.4}{Conclusions}{section.6}% 63
+\BOOKMARK [1][-]{subsection.6.4}{Conclusions}{}% 64
+\BOOKMARK [2][-]{subsection.Alph0.1}{Defining tphys across resolutions}{subsection.6.4}% 65
+\BOOKMARK [2][-]{subsection.Alph0.2}{The impact of high-order mapping to the dynamics grids}{subsection.6.4}% 66

@@ -69,6 +69,7 @@
 \contentsline {subsection}{\numberline {6.1}Introduction}{124}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Methods}{126}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Results}{126}{subsection.6.3}
-\contentsline {section}{\numberline {}Conclusions}{131}{figure.48}
-\contentsline {subsection}{\numberline {.1}Defining $\Delta t_{phys}$ across resolutions}{133}{subsection.Alph0.1}
-\contentsline {subsection}{\numberline {.2}The impact of high-order mapping to the dynamics grids}{135}{subsection.Alph0.2}
+\contentsline {subsection}{\numberline {6.4}Conclusions}{131}{subsection.6.4}
+\contentsline {section}{\numberline {}Conclusions}{132}{subsection.6.4}
+\contentsline {subsection}{\numberline {.1}Defining $\Delta t_{phys}$ across resolutions}{134}{subsection.Alph0.1}
+\contentsline {subsection}{\numberline {.2}The impact of high-order mapping to the dynamics grids}{136}{subsection.Alph0.2}

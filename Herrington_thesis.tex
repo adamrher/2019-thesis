@@ -1,7 +1,8 @@
 \documentclass[12pt]{article}
 \usepackage{lingmacros}
 \usepackage{tree-dvips}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=1.5in]{geometry}
+%\usepackage{geometry}
 \usepackage{setspace}
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -158,9 +159,11 @@ For my beloved brother, Jesse
 \addcontentsline{toc}{section}{\protect\numberline{}ACKNOWLEDGEMENTS}
 %\addcontentsline{toc}{chapter}{\protect\numberline{}ACKNOWLEDGEMENTS}
 \vspace*{4\baselineskip}
-This thesis is a culmination of four years of hard work, but only made possible with the support of several people. I work well independently, but this can sometimes be a character flaw; left to my own devices, I would probably go long stretches without checking in with my advisor. Kevin Reed set very clear expectations from day one that we would meet weekly to discuss progress. Kevin provided invaluable scientific and technical support, encouraged me to attend conferences and was crucial in helping me navigate and secure a postdoctoral career. For all these reasons and more, thank you Kevin. I am also extremely grateful to have participated in a year long visit to the National Center for Atmospheric Research (NCAR), as an Advance Study Program graduate student visitor under the mentorship of Peter Lauritzen. The knowledge expelled onto me from Peter cannot be overstated. I am a better scientist for being graced by his presence and I appreciate all the time he devoted to helping me understand the model development world.
+This thesis is a culmination of four years of hard work, but only made possible with the support of several people. I work well independently, but this can sometimes be a character flaw ---left to my own devices, I would probably go long stretches without checking in with my advisor. Kevin Reed set very clear expectations from day one that we would meet weekly to discuss progress. Kevin provided invaluable scientific and technical support, encouraged me to attend conferences and was crucial in helping me navigate and secure a postdoctoral career. For all these reasons and more, thank you Kevin. I am also extremely grateful to have participated in a year long visit to the National Center for Atmospheric Research (NCAR), as an Advance Study Program graduate student visitor under the mentorship of Peter Lauritzen. The knowledge expelled onto me from Peter cannot be overstated. I am a better scientist for being graced by his presence and I appreciate all the time he devoted to helping me understand the model development world.
 
-I would like to also thank committee members Minghua Zhang, Marat Khairoutdinov and Colin Zarzycki. Each member provided excellent feedback throughout this process, and each have had illuminating one-on-one scientific discussions with me along the way. From a previous life, I would like to thank my Masters' advisor Chris Poulsen, who saw me through a period when I still had my climate model training wheels on, and which enabled me to hit the ground running when I first arrived as a Ph.D. student at Stony Brook. I would like to thank my grand advisor, Christiane Jablonowski, who exposed me to the art of climate modeling as a Masters' student, providing me hope that the black box that is climate models can in fact, be understood.
+I would like to also thank committee members Minghua Zhang, Marat Khairoutdinov and Colin Zarzycki. Each member provided excellent feedback throughout this process, and each have had illuminating one-on-one scientific discussions with me along the way. From a previous life, I would like to thank my Masters' advisor Chris Poulsen, who saw me through a period when I still had my climate model training wheels on, and which enabled me to hit the ground running when I first arrived as a Ph.D. student at Stony Brook. I would like to thank my grand advisor, Christiane Jablonowski, who exposed me to the art of climate modeling as a Masters' student, providing me hope that a black box can in fact be understood.
+
+And lastly, but certainly not least, I want to thank mother, Bobbi Herrington, sister, Rachel Herrington and grandmother, Martha Wilk for being such a wonderful and loving family.
 
 \newpage
 \pagenumbering{arabic}
@@ -180,7 +183,7 @@ I would like to also thank committee members Minghua Zhang, Marat Khairoutdinov 
 \end{center}
 %\addcontentsline{toc}{section}{\protect\numberline{}Introduction}
 %\addcontentsline{toc}{chapter}{\protect\numberline{}Introduction}
-\input{chapter1.tex}
+\input{chapter1.tex} \label{sec:chapter1}
 
 \newpage
 \begin{center}
@@ -189,7 +192,7 @@ I would like to also thank committee members Minghua Zhang, Marat Khairoutdinov 
 \end{center}
 %\addcontentsline{toc}{section}{\protect\numberline{}An explanation for the sensitivity of the mean state of the Community Atmosphere Model to horizontal resolution on aqua-planets}
 %\addcontentsline{toc}{chapter}{\protect\numberline{}An explanation for the sensitivity of the mean state of the Community Atmosphere Model to horizontal resolution on aqua-planets}
-\input{chapter2.tex}
+\input{chapter2.tex} \label{sec:chapter2}
 
 \newpage
 \begin{center}
@@ -198,7 +201,7 @@ I would like to also thank committee members Minghua Zhang, Marat Khairoutdinov 
 \end{center}
 %\addcontentsline{toc}{section}{\protect\numberline{}An idealized test of the response of the Community Atmosphere Model to near grid-scale forcing across hydrostatic resolutions}
 %\addcontentsline{toc}{chapter}{\protect\numberline{}An idealized test of the response of the Community Atmosphere Model to near grid-scale forcing across hydrostatic resolutions}
-\input{chapter3.tex}
+\input{chapter3.tex} \label{sec:chapter3}
 
 \newpage
 \begin{center}
@@ -207,7 +210,7 @@ I would like to also thank committee members Minghua Zhang, Marat Khairoutdinov 
 \end{center}
 %\addcontentsline{toc}{section}{\protect\numberline{}Physics-dynamics coupling with element-based high-order Galerkin methods: quasi equal-area physics grid}
 %\addcontentsline{toc}{chapter}{\protect\numberline{}Physics-dynamics coupling with element-based high-order Galerkin methods: quasi equal-area physics grid}
-\input{chapter4.tex}
+\input{chapter4.tex} \label{sec:chapter4}
 
 \newpage
 \begin{center}
@@ -216,7 +219,7 @@ I would like to also thank committee members Minghua Zhang, Marat Khairoutdinov 
 \end{center}
 %\addcontentsline{toc}{section}{\protect\numberline{}Exploring a lower resolution physics grid in CAM-SE-CSLAM}
 %\addcontentsline{toc}{chapter}{\protect\numberline{}Exploring a lower resolution physics grid in CAM-SE-CSLAM}
-\input{chapter5.tex}
+\input{chapter5.tex} \label{sec:chapter5}
 
 \newpage
 \begin{center}
@@ -225,18 +228,19 @@ I would like to also thank committee members Minghua Zhang, Marat Khairoutdinov 
 \end{center}
 %\addcontentsline{toc}{section}{\protect\numberline{}Parameterized convection, grid-scale clouds and resolution sensitivity in CAM-SE-CSLAM}
 %\addcontentsline{toc}{chapter}{\protect\numberline{}Parameterized convection, grid-scale clouds and resolution sensitivity in CAM-SE-CSLAM}
-\input{chapter6.tex}
+\input{chapter6.tex} \label{sec:chapter6}
 
 \newpage
 \begin{center}
-%\section{Conclusions}
+\section{Conclusions}
 %\chapter{\bf{\normalsize Conclusions}}
 \end{center}
-\addcontentsline{toc}{section}{\protect\numberline{}Conclusions}
+%\addcontentsline{toc}{section}{\protect\numberline{}Conclusions}
 %\addcontentsline{toc}{chapter}{\protect\numberline{}Conclusions}
+\input{chapter7.tex} \label{sec:chapter7}
 
 \newpage
-\section*{APPENDICES}
+\section{APPENDICES}
 %\chapter*{\bf{\normalsize APPENDICES}}
 %\addcontentsline{toc}{section}{\protect\numberline{}APPENDICES}
 %\addcontentsline{toc}{chapter}{\protect\numberline{}APPENDICES}
@@ -245,7 +249,7 @@ I would like to also thank committee members Minghua Zhang, Marat Khairoutdinov 
 \newpage
 \section*{REFERENCES}
 %\chapter*{\bf{\normalsize REFERENCES}}
-%\addcontentsline{toc}{section}{\protect\numberline{}REFERENCES}
+\addcontentsline{toc}{section}{\protect\numberline{}REFERENCES}
 %\addcontentsline{toc}{chapter}{\protect\numberline{}REFERENCES}
 \setlength{\bibsep}{0pt}
 {\normalsize

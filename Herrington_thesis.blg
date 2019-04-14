@@ -3,47 +3,56 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Herrington_thesis.aux
 The style file: abbrvnat.bst
 Database file #1: bib.bib
-Warning--I didn't find a database entry for "HETAL2019JAMES"
+Repeated entry---line 8809 of file bib.bib
+ : @article{CCM2
+ :              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8838 of file bib.bib
+ : @article{M1987JAS
+ :                  ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for ""
-You've used 150 entries,
+Warning--empty year in CCM1RAD
+Warning--empty year in CCM1RAD
+You've used 162 entries,
             2773 wiz_defined-function locations,
-            1692 strings with 38950 characters,
-and the built_in function-call counts, 82746 in all, are:
-= -- 7322
-> -- 5655
-< -- 84
-+ -- 1908
-- -- 1751
-* -- 7538
-:= -- 13015
-add.period$ -- 564
-call.type$ -- 150
-change.case$ -- 1031
-chr.to.int$ -- 143
-cite$ -- 300
-duplicate$ -- 3081
-empty$ -- 6034
-format.name$ -- 2005
-if$ -- 17030
+            1764 strings with 40976 characters,
+and the built_in function-call counts, 88185 in all, are:
+= -- 7817
+> -- 5964
+< -- 91
++ -- 2013
+- -- 1844
+* -- 7996
+:= -- 13867
+add.period$ -- 602
+call.type$ -- 162
+change.case$ -- 1099
+chr.to.int$ -- 155
+cite$ -- 326
+duplicate$ -- 3315
+empty$ -- 6473
+format.name$ -- 2118
+if$ -- 18149
 int.to.chr$ -- 8
 int.to.str$ -- 1
-missing$ -- 150
-newline$ -- 871
-num.names$ -- 603
-pop$ -- 1720
+missing$ -- 161
+newline$ -- 933
+num.names$ -- 651
+pop$ -- 1839
 preamble$ -- 1
-purify$ -- 882
+purify$ -- 937
 quote$ -- 0
-skip$ -- 2508
+skip$ -- 2683
 stack$ -- 0
-substring$ -- 3754
-swap$ -- 200
+substring$ -- 3995
+swap$ -- 210
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1625
-warning$ -- 0
-while$ -- 626
+type$ -- 1752
+warning$ -- 2
+while$ -- 677
 width$ -- 0
-write$ -- 2179
-(There were 2 warnings)
+write$ -- 2337
+(There were 2 error messages)

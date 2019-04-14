@@ -1,4 +1,4 @@
-\begin{thebibliography}{150}
+\begin{thebibliography}{162}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,6 +10,13 @@ A.~Arakawa and W.~H. Schubert.
 \newblock Interaction of a cumulus cloud ensemble with the large-scale
   environment, {P}art {I}.
 \newblock \emph{J. Atmos. Sci.}, 31:\penalty0 674--701, 1974.
+
+\bibitem[Arakawa and Wu(2013)]{AW2013JAS}
+A.~Arakawa and C.-M. Wu.
+\newblock A unified representation of deep moist convection in numerical
+  modeling of the atmosphere. part i.
+\newblock \emph{Journal of the Atmospheric Sciences}, 70\penalty0 (7):\penalty0
+  1977--1992, 2013.
 
 \bibitem[Bacmeister et~al.(2018)Bacmeister, Reed, Hannay, Lawrence, Bates,
   Truesdale, Rosenbloom, and Levy]{BETAL2018CC}
@@ -214,6 +221,12 @@ J.~E. Guerra and P.~A. Ullrich.
 \newblock \doi{10.5194/gmd-9-2007-2016}.
 \newblock URL \url{https://www.geosci-model-dev.net/9/2007/2016/}.
 
+\bibitem[Hack et~al.(1993)Hack, Boville, Briegleb, Kiehl, and Williamson]{CCM2}
+J.~Hack, B.~Boville, B.~Briegleb, J.~Kiehl, and D.~Williamson.
+\newblock Description of the {NCAR} {C}ommunity {C}limate {M}odel ({CCM2}).
+\newblock \emph{NCAR Technical Note}, NCAR/TN-382+STR, 1993.
+\newblock \doi{10.5065/D6QZ27XV}.
+
 \bibitem[Hack et~al.(2006)Hack, Caron, Danabasoglu, Oleson, Bitz, and
   Truesdale]{HETAL2006JCLIM}
 J.~Hack, M.~Caron, G.~Danabasoglu, K.~W. Oleson, C.~Bitz, and J.~Truesdale.
@@ -236,6 +249,13 @@ L.~M. Harris, S.-J. Lin, and C.~Tu.
 \newblock \emph{Journal of Climate}, 29\penalty0 (11):\penalty0 4293–4314,
   2016.
 \newblock \doi{10.1175/jcli-d-15-0389.1}.
+
+\bibitem[Held and Hou(1980)]{HH1980JAS}
+I.~M. Held and A.~Y. Hou.
+\newblock Nonlinear axially symmetric circulations in a nearly inviscid
+  atmosphere.
+\newblock \emph{Journal of the Atmospheric Sciences}, 37\penalty0 (3):\penalty0
+  515--533, 1980.
 
 \bibitem[Held and Schneider(1999)]{HS1999JAS}
 I.~M. Held and T.~Schneider.
@@ -350,6 +370,20 @@ J.~Kiehl and D.~Williamson.
   center for atmospheric research community climate model.
 \newblock \emph{Journal of Geophysical Research: Atmospheres}, 96\penalty0
   (D6):\penalty0 10955--10980, 1991.
+
+\bibitem[Kiehl et~al.(1994)Kiehl, Hack, and Briegleb]{KETAL1994JGR}
+J.~Kiehl, J.~Hack, and B.~Briegleb.
+\newblock The simulated earth radiation budget of the national center for
+  atmospheric research community climate model ccm2 and comparisons with the
+  earth radiation budget experiment (erbe).
+\newblock \emph{Journal of Geophysical Research: Atmospheres}, 99\penalty0
+  (D10):\penalty0 20815--20827, 1994.
+
+\bibitem[Kiehl et~al.()Kiehl, Wolski, Briegleb, and Ramanathan]{CCM1RAD}
+J.~T. Kiehl, R.~J. Wolski, B.~P. Briegleb, and V.~Ramanathan.
+\newblock Documentation of radiation and cloud routines in the ncar community
+  climate model (ccm1).
+\newblock Technical report, NCAR Tech. Note NCAR/TN-288+ IA.
 
 \bibitem[Kim et~al.(2008)Kim, Giraldo, Flatau, Liou, and Peng]{KetAl2008JGR}
 Y.-J. Kim, F.~X. Giraldo, M.~Flatau, C.-S. Liou, and M.~S. Peng.
@@ -528,6 +562,12 @@ Y.~Maday and A.~T. Patera.
 \newblock In A.~K. Noor and J.~T. Oden, editors, \emph{State of the Art Surveys
   on Computational Mechanics}, pages 71--143. {ASME}, New York, 1987.
 
+\bibitem[Manabe et~al.(1965)Manabe, Smagorinsky, and Strickler]{METAL1965MWR}
+S.~Manabe, J.~Smagorinsky, and R.~F. Strickler.
+\newblock Simulated climatology of a general circulation model with a
+  hydrologic cycle.
+\newblock \emph{Mon. Wea. Rev}, 93\penalty0 (12):\penalty0 769--798, 1965.
+
 \bibitem[Marras et~al.(2015)Marras, Nazarov, and Giraldo]{METAL2015JCP}
 S.~Marras, M.~Nazarov, and F.~X. Giraldo.
 \newblock Stabilized high-order galerkin methods based on a parameter-free
@@ -535,6 +575,13 @@ S.~Marras, M.~Nazarov, and F.~X. Giraldo.
 \newblock \emph{Journal of Computational Physics}, 301:\penalty0 77–101,
   2015.
 \newblock \doi{10.1016/j.jcp.2015.07.034}.
+
+\bibitem[McFarlane(1987)]{M1987JAS}
+N.~McFarlane.
+\newblock The effect of orographically excited gravity wave drag on the general
+  circulation of the lower stratosphere and troposphere.
+\newblock \emph{J. Atmos. Sci.}, 44:\penalty0 1775--1800, 1987.
+\newblock \doi{10.1175/1520-0469}.
 
 \bibitem[Medeiros et~al.(2016)Medeiros, Williamson, and Olson]{MWO2016JAMES}
 B.~Medeiros, D.~L. Williamson, and J.~G. Olson.
@@ -893,6 +940,13 @@ R.~J. Small, J.~Bacmeister, D.~Bailey, A.~Baker, S.~Bishop, F.~Bryan, J.~Caron,
   1065--1094, 2014.
 \newblock \doi{10.1002/2014MS000363}.
 
+\bibitem[Song and Zhang(2018)]{SZ2018JCLIM}
+F.~Song and G.~J. Zhang.
+\newblock Understanding and improving the scale dependence of trigger functions
+  for convective parameterization using cloud-resolving model data.
+\newblock \emph{Journal of Climate}, 31\penalty0 (18):\penalty0 7385--7399,
+  2018.
+
 \bibitem[Suarez et~al.(1983)Suarez, Arakawa, and Randall]{SETAL983MWR}
 M.~J. Suarez, A.~Arakawa, and D.~A. Randall.
 \newblock The parameterization of the planetary boundary layer in the ucla
@@ -1008,6 +1062,11 @@ H.~Wan, P.~J. Rasch, M.~A. Taylor, and C.~Jablonowski.
   (1):\penalty0 215--225, 2015.
 \newblock \doi{10.1002/2014MS000368}.
 
+\bibitem[Weart(2008)]{WEART2008}
+S.~R. Weart.
+\newblock \emph{The discovery of global warming}.
+\newblock Harvard University Press, 2008.
+
 \bibitem[Wedi(2014)]{W2014PTRSL}
 N.~P. Wedi.
 \newblock Increasing horizontal resolution in numerical weather prediction and
@@ -1054,6 +1113,12 @@ L.~J. Wicker and W.~C. Skamarock.
   1992–1999, 1998.
 \newblock \doi{10.1175/1520-0493(1998)126<1992:atssft>2.0.co;2}.
 
+\bibitem[Williamson et~al.(1987)Williamson, Kiehl, Ramanathan, Dickinson, and
+  Hack]{CCM1}
+D.~Williamson, J.~Kiehl, V.~Ramanathan, R.~Dickinson, and J.~Hack.
+\newblock Description of ncar community climate model (ccm1). ncar tech. note.
+\newblock Technical report, NCAR/TN-285+ STR, 1987.
+
 \bibitem[Williamson(1999)]{W1999T}
 D.~L. Williamson.
 \newblock Convergence of atmospheric simulations with increasing horizontal
@@ -1086,6 +1151,11 @@ D.~L. Williamson and J.~G. Olson.
 \newblock Dependence of aqua-planet simulations on time step.
 \newblock \emph{Q. J. R. Meteorol. Soc.}, 129\penalty0 (591):\penalty0
   2049--2064, 2003.
+
+\bibitem[Williamson and Rasch(1994)]{WR1994TELLUS}
+D.~L. Williamson and P.~J. Rasch.
+\newblock Water vapor transport in the ncar ccm2.
+\newblock \emph{Tellus A}, 46\penalty0 (1):\penalty0 34--51, 1994.
 
 \bibitem[Williamson et~al.(1995)Williamson, Kiehl, and Hack]{WETAL1995CD}
 D.~L. Williamson, J.~T. Kiehl, and J.~J. Hack.
@@ -1137,6 +1207,13 @@ G.~Zhang and N.~McFarlane.
   convection in the canadian climate centre general circulation model.
 \newblock \emph{{Atmosphere-ocean}}, {33}\penalty0 ({3}):\penalty0 {407--446},
   {1995}.
+
+\bibitem[Zhang(2002)]{Z2002JGR}
+G.~J. Zhang.
+\newblock Convective quasi-equilibrium in midlatitude continental environment
+  and its effect on convective parameterization.
+\newblock \emph{Journal of Geophysical Research: Atmospheres}, 107\penalty0
+  (D14):\penalty0 ACL--12, 2002.
 
 \bibitem[Zhang et~al.(2017)Zhang, Rasch, Taylor, Wan, Leung, Ma, Golaz, Wolfe,
   Lin, Singh, Burrows, Yoon, Wang, Qian, Tang, Caldwell, and Xie]{water-leak}

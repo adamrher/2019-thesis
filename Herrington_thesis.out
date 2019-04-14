@@ -3,64 +3,70 @@
 \BOOKMARK [1][-]{section*.3}{LIST OF FIGURES AND TABLES}{}% 3
 \BOOKMARK [1][-]{section*.6}{ACKNOWLEDGEMENTS}{}% 4
 \BOOKMARK [1][-]{section*.7}{CHAPTERS}{}% 5
-\BOOKMARK [1][-]{section.1}{Introduction}{}% 6
-\BOOKMARK [1][-]{section.2}{An explanation for the sensitivity of the mean state of the Community Atmosphere Model to horizontal resolution on aqua-planets}{}% 7
-\BOOKMARK [2][-]{subsection.2.1}{Introduction}{section.2}% 8
-\BOOKMARK [2][-]{subsection.2.2}{Methods}{section.2}% 9
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Model Description}{subsection.2.2}% 10
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Simulation Design}{subsection.2.2}% 11
-\BOOKMARK [3][-]{subsubsection.2.2.3}{Convergence Metrics}{subsection.2.2}% 12
-\BOOKMARK [3][-]{subsubsection.2.2.4}{Isentropic Coordinates}{subsection.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.3}{Results}{section.2}% 14
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Global Sensitivity}{subsection.2.3}% 15
-\BOOKMARK [3][-]{subsubsection.2.3.2}{Regional Sensitivity}{subsection.2.3}% 16
-\BOOKMARK [3][-]{subsubsection.2.3.3}{Moisture Budget}{subsection.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.4}{An Explanation}{section.2}% 18
-\BOOKMARK [2][-]{subsection.2.5}{Conclusions}{section.2}% 19
-\BOOKMARK [1][-]{section.3}{An idealized test of the response of the Community Atmosphere Model to near grid-scale forcing across hydrostatic resolutions}{}% 20
-\BOOKMARK [2][-]{subsection.3.1}{Introduction}{section.3}% 21
-\BOOKMARK [2][-]{subsection.3.2}{Materials and Methods}{section.3}% 22
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Dynamical Cores}{subsection.3.2}% 23
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Moist Physics}{subsection.3.2}% 24
-\BOOKMARK [2][-]{subsection.3.3}{Results}{section.3}% 25
-\BOOKMARK [3][-]{subsubsection.3.3.1}{CAM-SE without moisture}{subsection.3.3}% 26
-\BOOKMARK [3][-]{subsubsection.3.3.2}{CAM-SE coupled to the Simple Condensation Scheme}{subsection.3.3}% 27
-\BOOKMARK [3][-]{subsubsection.3.3.3}{CAM-SE coupled to CAM5 Moist Physics}{subsection.3.3}% 28
-\BOOKMARK [3][-]{subsubsection.3.3.4}{Sensitivity to physics time-step}{subsection.3.3}% 29
-\BOOKMARK [2][-]{subsection.3.4}{Discussion}{section.3}% 30
-\BOOKMARK [2][-]{subsection.3.5}{Conclusions}{section.3}% 31
-\BOOKMARK [1][-]{section.4}{Physics-dynamics coupling with element-based high-order Galerkin methods: quasi equal-area physics grid}{}% 32
-\BOOKMARK [2][-]{subsection.4.1}{Introduction}{section.4}% 33
-\BOOKMARK [2][-]{subsection.4.2}{The Quadrature Node Problem}{section.4}% 34
-\BOOKMARK [2][-]{subsection.4.3}{Methods}{section.4}% 35
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Mapping state from dynamics grid \(GLL\) to physics grid \(pg\)}{subsection.4.3}% 36
-\BOOKMARK [3][-]{subsubsection.4.3.2}{Mapping tendencies from physics grid \(pg\) to dynamics grid \(GLL\)}{subsection.4.3}% 37
-\BOOKMARK [3][-]{subsubsection.4.3.3}{Time splitting and physics-dynamics coupling}{subsection.4.3}% 38
-\BOOKMARK [2][-]{subsection.4.4}{Results}{section.4}% 39
-\BOOKMARK [3][-]{subsubsection.4.4.1}{Moist Baroclinic Wave}{subsection.4.4}% 40
-\BOOKMARK [3][-]{subsubsection.4.4.2}{Aqua-planets}{subsection.4.4}% 41
-\BOOKMARK [3][-]{subsubsection.4.4.3}{Held-Suarez with Topography}{subsection.4.4}% 42
-\BOOKMARK [3][-]{subsubsection.4.4.4}{AMIP type simulations}{subsection.4.4}% 43
-\BOOKMARK [2][-]{subsection.4.5}{Conclusions}{section.4}% 44
-\BOOKMARK [1][-]{section.5}{Exploring a lower resolution physics grid in CAM-SE-CSLAM}{}% 45
-\BOOKMARK [2][-]{subsection.5.1}{Introduction}{section.5}% 46
-\BOOKMARK [2][-]{subsection.5.2}{Methods}{section.5}% 47
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Mapping tracers from A\(pg3\) to A\(pg2\) \(CSLAM to physics grid\)}{subsection.5.2}% 48
-\BOOKMARK [3][-]{subsubsection.5.2.2}{Mapping tracer increments from A\(pg2\) to A\(pg3\) \(physics to CSLAM grid\)}{subsection.5.2}% 49
-\BOOKMARK [3][-]{subsubsection.5.2.3}{Why `conventional' conservative remapping will not work}{subsection.5.2}% 50
-\BOOKMARK [3][-]{subsubsection.5.2.4}{New tendency mapping algorithm}{subsection.5.2}% 51
-\BOOKMARK [3][-]{subsubsection.5.2.5}{High-order \(non-conservative\) pre-allocation of tracer tendencies}{subsection.5.2}% 52
-\BOOKMARK [3][-]{subsubsection.5.2.6}{Model Configurations}{subsection.5.2}% 53
-\BOOKMARK [2][-]{subsection.5.3}{Results}{section.5}% 54
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Mass Conservation and Linear-Correlation Preservation}{subsection.5.3}% 55
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Grid Imprinting}{subsection.5.3}% 56
-\BOOKMARK [3][-]{subsubsection.5.3.3}{Impact on Resolved Scales of Motion}{subsection.5.3}% 57
-\BOOKMARK [2][-]{subsection.5.4}{Conclusions}{section.5}% 58
-\BOOKMARK [1][-]{section.6}{Parameterized convection, grid-scale clouds and resolution sensitivity in CAM-SE-CSLAM}{}% 59
-\BOOKMARK [2][-]{subsection.6.1}{Introduction}{section.6}% 60
-\BOOKMARK [2][-]{subsection.6.2}{Methods}{section.6}% 61
-\BOOKMARK [2][-]{subsection.6.3}{Results}{section.6}% 62
-\BOOKMARK [2][-]{subsection.6.4}{Conclusions}{section.6}% 63
-\BOOKMARK [1][-]{subsection.6.4}{Conclusions}{}% 64
-\BOOKMARK [2][-]{subsection.Alph0.1}{Defining tphys across resolutions}{subsection.6.4}% 65
-\BOOKMARK [2][-]{subsection.Alph0.2}{The impact of high-order mapping to the dynamics grids}{subsection.6.4}% 66
+\BOOKMARK [1][-]{section.1}{Introduction: The history of resolution sensitivity in the Community Atmosphere Model and its predecessors}{}% 6
+\BOOKMARK [2][-]{subsection.1.1}{A brief history of Atmospheric General Circulation Models}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.2}{CCM1}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.3}{CCM2}{section.1}% 9
+\BOOKMARK [2][-]{subsection.1.4}{CAM3}{section.1}% 10
+\BOOKMARK [2][-]{subsection.1.5}{CAM4}{section.1}% 11
+\BOOKMARK [2][-]{subsection.1.6}{CAM5}{section.1}% 12
+\BOOKMARK [1][-]{section.2}{An explanation for the sensitivity of the mean state of the Community Atmosphere Model to horizontal resolution on aqua-planets}{}% 13
+\BOOKMARK [2][-]{subsection.2.1}{Introduction}{section.2}% 14
+\BOOKMARK [2][-]{subsection.2.2}{Methods}{section.2}% 15
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Model Description}{subsection.2.2}% 16
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Simulation Design}{subsection.2.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Convergence Metrics}{subsection.2.2}% 18
+\BOOKMARK [3][-]{subsubsection.2.2.4}{Isentropic Coordinates}{subsection.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.3}{Results}{section.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Global Sensitivity}{subsection.2.3}% 21
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Regional Sensitivity}{subsection.2.3}% 22
+\BOOKMARK [3][-]{subsubsection.2.3.3}{Moisture Budget}{subsection.2.3}% 23
+\BOOKMARK [2][-]{subsection.2.4}{An Explanation}{section.2}% 24
+\BOOKMARK [2][-]{subsection.2.5}{Conclusions}{section.2}% 25
+\BOOKMARK [1][-]{section.3}{An idealized test of the response of the Community Atmosphere Model to near grid-scale forcing across hydrostatic resolutions}{}% 26
+\BOOKMARK [2][-]{subsection.3.1}{Introduction}{section.3}% 27
+\BOOKMARK [2][-]{subsection.3.2}{Materials and Methods}{section.3}% 28
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Dynamical Cores}{subsection.3.2}% 29
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Moist Physics}{subsection.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.3}{Results}{section.3}% 31
+\BOOKMARK [3][-]{subsubsection.3.3.1}{CAM-SE without moisture}{subsection.3.3}% 32
+\BOOKMARK [3][-]{subsubsection.3.3.2}{CAM-SE coupled to the Simple Condensation Scheme}{subsection.3.3}% 33
+\BOOKMARK [3][-]{subsubsection.3.3.3}{CAM-SE coupled to CAM5 Moist Physics}{subsection.3.3}% 34
+\BOOKMARK [3][-]{subsubsection.3.3.4}{Sensitivity to physics time-step}{subsection.3.3}% 35
+\BOOKMARK [2][-]{subsection.3.4}{Discussion}{section.3}% 36
+\BOOKMARK [2][-]{subsection.3.5}{Conclusions}{section.3}% 37
+\BOOKMARK [1][-]{section.4}{Physics-dynamics coupling with element-based high-order Galerkin methods: quasi equal-area physics grid}{}% 38
+\BOOKMARK [2][-]{subsection.4.1}{Introduction}{section.4}% 39
+\BOOKMARK [2][-]{subsection.4.2}{The Quadrature Node Problem}{section.4}% 40
+\BOOKMARK [2][-]{subsection.4.3}{Methods}{section.4}% 41
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Mapping state from dynamics grid \(GLL\) to physics grid \(pg\)}{subsection.4.3}% 42
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Mapping tendencies from physics grid \(pg\) to dynamics grid \(GLL\)}{subsection.4.3}% 43
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Time splitting and physics-dynamics coupling}{subsection.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.4}{Results}{section.4}% 45
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Moist Baroclinic Wave}{subsection.4.4}% 46
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Aqua-planets}{subsection.4.4}% 47
+\BOOKMARK [3][-]{subsubsection.4.4.3}{Held-Suarez with Topography}{subsection.4.4}% 48
+\BOOKMARK [3][-]{subsubsection.4.4.4}{AMIP type simulations}{subsection.4.4}% 49
+\BOOKMARK [2][-]{subsection.4.5}{Conclusions}{section.4}% 50
+\BOOKMARK [1][-]{section.5}{Exploring a lower resolution physics grid in CAM-SE-CSLAM}{}% 51
+\BOOKMARK [2][-]{subsection.5.1}{Introduction}{section.5}% 52
+\BOOKMARK [2][-]{subsection.5.2}{Methods}{section.5}% 53
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Mapping tracers from A\(pg3\) to A\(pg2\) \(CSLAM to physics grid\)}{subsection.5.2}% 54
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Mapping tracer increments from A\(pg2\) to A\(pg3\) \(physics to CSLAM grid\)}{subsection.5.2}% 55
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Why `conventional' conservative remapping will not work}{subsection.5.2}% 56
+\BOOKMARK [3][-]{subsubsection.5.2.4}{New tendency mapping algorithm}{subsection.5.2}% 57
+\BOOKMARK [3][-]{subsubsection.5.2.5}{High-order \(non-conservative\) pre-allocation of tracer tendencies}{subsection.5.2}% 58
+\BOOKMARK [3][-]{subsubsection.5.2.6}{Model Configurations}{subsection.5.2}% 59
+\BOOKMARK [2][-]{subsection.5.3}{Results}{section.5}% 60
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Mass Conservation and Linear-Correlation Preservation}{subsection.5.3}% 61
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Grid Imprinting}{subsection.5.3}% 62
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Impact on Resolved Scales of Motion}{subsection.5.3}% 63
+\BOOKMARK [2][-]{subsection.5.4}{Conclusions}{section.5}% 64
+\BOOKMARK [1][-]{section.6}{Parameterized convection, grid-scale clouds and resolution sensitivity in CAM-SE-CSLAM}{}% 65
+\BOOKMARK [2][-]{subsection.6.1}{Introduction}{section.6}% 66
+\BOOKMARK [2][-]{subsection.6.2}{Methods}{section.6}% 67
+\BOOKMARK [2][-]{subsection.6.3}{Results}{section.6}% 68
+\BOOKMARK [2][-]{subsection.6.4}{Conclusions}{section.6}% 69
+\BOOKMARK [1][-]{subsection.6.4}{Conclusions}{}% 70
+\BOOKMARK [2][-]{subsection.Alph0.1}{Defining tphys across resolutions}{subsection.6.4}% 71
+\BOOKMARK [2][-]{subsection.Alph0.2}{The impact of high-order mapping to the dynamics grids}{subsection.6.4}% 72

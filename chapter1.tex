@@ -167,7 +167,7 @@ Table~\ref{tbl:table1-5} shows that global mean statistics in the simulations. T
 
 \subsection{CAM6}
 
-CAM, version 6 (CAM6; \url{https://ncar.github.io/CAM/doc/build/html/users_guide/index.html}) contains a replacement of the stratiform scheme, planetary boundary layer scheme and shallow convection scheme with a unified assumed probability distribution function scheme referred to as the Cloud Layer Unified by Binormals \citep{GETAL2002JAS}. The gravity wave drag scheme has been replaced with an anisotropic gravity wave drag scheme that uses the orientation of topographic ridges to determine the direction of propagation.
+The simulations use CAM, version 6 physics (CAM6; \url{https://ncar.github.io/CAM/doc/build/html/users_guide/index.html}). The Cloud Layers Unified by Binormals \citep[CLUBB][]{GETAL2002JAS,BOG2013JCLIM} is an assumed PDF higher order closure model that handles shallow convection, planetary boundary layer mixing and cloud macrophysics. The macrophyiscs are coupled with a two-moment bulk cloud microphysics scheme with prognostic precipitation \citep{MG2}, and microphysics are coupled with a three mode Modular Aerosol Model. The gravity wave drag scheme has been replaced with an anisotropic gravity wave drag scheme that uses the orientation of topographic ridges to determine the direction of propagation.
 
  \begin{table}
  \caption{Experimental design and global means from Chapter~\ref{sec:chapter6}.}
@@ -188,4 +188,4 @@ CAM, version 6 (CAM6; \url{https://ncar.github.io/CAM/doc/build/html/users_guide
  \label{tbl:table1-6}
  \end{table}
 
-Chapter~\ref{sec:chapter6} contains a convergence study of CAM6 using the CAM-SE dynamical core, with a new dry mass vertical coordinate \citep{LetAl2018JAMES}, a Conservative Semi-Lagrangian Advection Method for tracer advection \citep[CSLAM; ][]{LTOUNGK2017MWR}, and the physics are evaluated on the CSLAM grid \citep{HL2018MWR}. Table~\ref{tbl:table1-6} shows the results of a convergence study in an aqua-planet configuration \citep[`QOBS' SST profile in][]{NH2000ASL}.
+Chapter~\ref{sec:chapter6} contains a convergence study of CAM6 using the CAM-SE dynamical core, with a new dry mass vertical coordinate \citep{LetAl2018JAMES}, a Conservative Semi-Lagrangian Advection Method for tracer advection \citep[CSLAM; ][]{LTOUNGK2017MWR}. The physics are evaluated on the CSLAM grid \citep{HL2018MWR}. Table~\ref{tbl:table1-6} shows the results of a convergence study in an aqua-planet configuration \citep[`QOBS' SST profile in][]{NH2000ASL}. Total precipitable water, total cloud fraction and deep convective precipitation rate decreases, while stratiform precipitation increases, monotonically with resolution. Resolution sensitivity in CAM6 is similar to all models in the CAM-lineage

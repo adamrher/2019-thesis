@@ -5,8 +5,9 @@ The spectral element dynamical core option (CAM-SE) in the Community Atmosphere 
 
 An alternative explanation for the resolution sensitivity observed in AGCMs relates to the inherent scale dependencies of the underlying equations of motion \citep{F2007JAS,HR2017JCLIM}. These scale dependencies have been discussed before in the context of non-hydrostatic convection permitting simulations \citep{O1981JAS,WETAL1997MWR,PG2006JAS,JR2016QJRMS}, but its relevance to hydrostatic convection in AGCMs is rarely discussed \citep{F2007JAS,J2017JAMES}. This is hardly surprising since convection schemes are implemented in AGCMs to reduce the occurrence of resolved convection, and may lead many to question whether resolved convection occurs in AGCMs at all. However, evidence showing the importance of resolved updrafts and downdrafts on simulated tropical convective systems in AGCMs can be found as far back as \cite{MK1997QJRMS}, and more recently by \cite{OETAL2016JAMES}.
 
-\begin{figure}[t]
+\begin{figure}
 \begin{center}
+%\noindent\includegraphics[width=25pc,angle=0]{chapter3/Figure1.eps}\\
 \noindent\includegraphics[width=25pc,angle=0]{chapter3/Figure1.eps}\\
 \end{center}
 \caption{Instantaneous snapshot of the vertical pressure velocity (colors) and the diabatic forcing from the column physics (black contours) for a longitude-height transect at the equator from a series of aqua-planet simulations at four different horizontal resolutions. Contour interval is $+10$ K day$^{-1}$ (solid) and $-10$ K day$^{-1}$ (dashed).}
@@ -36,10 +37,11 @@ Through assuming a linear relationship between grid spacing ($\Delta x$) and dia
 The goal of this paper is to test the robustness of the scaling (equation~\ref{eq:eq3-3}) in a simplified, non-rotating AGCM framework. We begin with an idealized set of rising thermal bubbles using CAM-SE without moist processes, and incrementally introduce some moist parameterizations to determine how their inclusion may affect the scaling of equation~\ref{eq:eq3-3}. We do not consider the influence of convection schemes – CAM convection schemes are incompatible with our experimental design. While this limits our ability to extend our results to the behavior of a complete AGCM, we argue that our simplified moist framework is still relevant to the behavior of a complete AGCM, and as such, will shed light on whether the moist physics or the scale dependencies of the dry equations of motion are the driving force behind the resolution sensitivity in CAM. 
 
 \begin{table}
+\caption{Quasi-uniform horizontal grid spacing ($\Delta x$), time-stepping ($\Delta t$) and hyper-viscosity coefficients ($\nu$) used in the aqua-planet simulations. Hyper-viscosity coefficients are after \cite{ZetAl2014JC} and are identical for the treatment of momentum, temperature and specific humidity.}
 \begin{center}
 \noindent\includegraphics[width=25pc,angle=0]{chapter3/table1.pdf}\\
+%\noindent\includegraphics[width=10pc,angle=0]{chapter3/table1.pdf}\\
 \end{center}
-\caption{Quasi-uniform horizontal grid spacing ($\Delta x$), time-stepping ($\Delta t$) and hyper-viscosity coefficients ($\nu$) used in the aqua-planet simulations. Hyper-viscosity coefficients are after \cite{ZetAl2014JC} and are identical for the treatment of momentum, temperature and specific humidity.}
 \label{tbl:table3-1}
 \end{table}
 
@@ -62,7 +64,8 @@ Towards the other end of the spectrum, the Community Atmosphere Model, version 5
 
 \begin{figure}
 \begin{center}
-\noindent\includegraphics[width=25pc,angle=0]{chapter3/Figure2.eps}\\
+\noindent\includegraphics[width=30pc,angle=0]{chapter3/Figure2.eps}\\
+%\noindent\includegraphics[width=15pc,angle=0]{chapter3/Figure2.eps}\\
 \end{center}
 \caption{Initial conditions used in the moist experiments. Background temperature (top, left) and background relative humidity (bottom, left) reference profiles.  A moist bubble with $r_h = X \times 350$ km, where $X$ is the scale factor from Table~\ref{tbl:table3-2}, is depicted in the middle and right plots: potential temperature perturbation in the longitude-pressure plane (top, middle) and the latitude-longitude plane (top, right) and the relative humidity perturbation in the longitude-pressure plane (bottom, middle) and the latitude-longitude plane (bottom, right). The horizontal dashed lines denotes the location of the tropopause.}
 \label{fig:figure3-2}
@@ -94,10 +97,11 @@ RH^{\prime} (R) = \begin{cases} \left( 1 - h_0 \right) + \Delta h * \Pi * \cos^2
 where $\Delta h$ is the magnitude of the relative humidity perturbation above saturation. The relative humidity parameters are set to $h_0 = 0.80$ and $\Delta h  = 0.20$ (relative humidity is defined as a fraction as opposed to a percent, throughout this work) modeled after the aqua-planets. The definition of relative humidity in the initial conditions needs to be made consistent with the parameterization one is using. The simple condensation scheme and the CAM5 physics package use different definitions for saturation vapor pressure, and their initial conditions were made consistent with these definitions.
 
 \begin{table}
+\caption{Scale factors ($X$) used to scale Earth’s planetary radius to match the horizontal resolution of other grids (header), as well as the horizontal bubble radius ($r_h$) and hyper-viscosity coefficients ($\nu$), for each equivalent resolution.}
 \begin{center}
 \noindent\includegraphics[width=25pc,angle=0]{chapter3/table2.pdf}\\
+%\noindent\includegraphics[width=10pc,angle=0]{chapter3/table2.pdf}\\
 \end{center}
-\caption{Scale factors ($X$) used to scale Earth’s planetary radius to match the horizontal resolution of other grids (header), as well as the horizontal bubble radius ($r_h$) and hyper-viscosity coefficients ($\nu$), for each equivalent resolution.}
 \label{tbl:table3-2}
 \end{table}
 
@@ -106,10 +110,11 @@ Through fixing the initial conditions, and multiplying the planetary radius, $a$
 Two additional important parameters are the vertical location of the bubble ($z_c$) and the magnitude ($\Delta \theta$). A smaller $z_c$ or larger $\Delta \theta$ both lead to increased available potential energy, and potentially greater vertical motion. Figure~\ref{fig:figure3-1} indicates that large-magnitude stratiform tendencies are common in the Tropical upper-troposphere at all resolutions. The diabatic forcing depicted in Figure~\ref{fig:figure3-1} correspond to potential temperature perturbations on the order of 1 K. Despite the prevalence of the upper-troposphere structures, we opt for a more extreme initial condition, one that is less common in the simulations, to encourage non-linearity that could potentially break the scaling of equation~\ref{eq:eq3-3}. Plots of the initial conditions for the moist experiments are provided in Figure~\ref{fig:figure3-2}, depicting a bubble with a magnitude of 3K, a vertical extent much less than the depth of the troposphere, and located just above the nominal boundary layer. Table~\ref{tbl:table3-3} provides a list of all parameters used to generate the initial conditions for the experiments.
 
 \begin{table}
+\caption{Parameters used in generating the initial conditions for the dry and moist experiments. $X$ is the scale factor, provided in Table~\ref{tbl:table3-2}.}
 \begin{center}
 \noindent\includegraphics[width=20pc,angle=0]{chapter3/table3.pdf}\\
+%\noindent\includegraphics[width=5pc,angle=0]{chapter3/table3.pdf}\\
 \end{center}
-\caption{Parameters used in generating the initial conditions for the dry and moist experiments. $X$ is the scale factor, provided in Table~\ref{tbl:table3-2}.}
 \label{tbl:table3-3}
 \end{table}
 
@@ -123,11 +128,12 @@ Two additional important parameters are the vertical location of the bubble ($z_
 
 \subsection{Results}
 \subsubsection{CAM-SE without moisture}
-Before embarking on an analysis of the moist experiments, we first consider the behavior of an experiment which contains no moist processes. The red markers in Figure~\ref{fig:figure3-3} are the results of a dry experiment, i.e. the initial conditions are those of Figure~\ref{fig:figure3-2}, but with no specific humidity. The blue markers are the results from a moist experiment, and are discussed in the next section. Results are displayed as the minimum vertical pressure velocity, $\omega$, over the duration of each experiment as a function of $r_h$. The $1/r_h$scaling implied by equation~\ref{eq:eq3-3} is overlain as a grey line, scaled by the lowest resolution simulation. The analytical scaling and the model experiments agree to a remarkable extent, indicating that the model dynamics are adequately described by the simple scale analysis of equation~\ref{eq:eq3-3} for the case of a dry, rising bubble.
+Before embarking on an analysis of the moist experiments, we first consider the behavior of an experiment which contains no moist processes. The red markers in Figure~\ref{fig:figure3-3} are the results of a dry experiment, i.e. the initial conditions are those of Figure~\ref{fig:figure3-2}, but with no specific humidity. The blue markers are the results from a moist experiment, and are discussed in the next section. Results are displayed as the minimum vertical pressure velocity, $\omega$, over the duration of each experiment as a function of $r_h$. The $1/r_h$ scaling implied by equation~\ref{eq:eq3-3} is overlain as a grey line, scaled by the lowest resolution simulation. The analytical scaling and the model experiments agree to a remarkable extent, indicating that the model dynamics are adequately described by the simple scale analysis of equation~\ref{eq:eq3-3} for the case of a dry, rising bubble.
 
 \begin{figure}
 \begin{center}
 \noindent\includegraphics[width=25pc,angle=0]{chapter3/Figure4_crop.pdf}\\
+%\noindent\includegraphics[width=15pc,angle=0]{chapter3/Figure4_crop.pdf}\\
 \end{center}
 \caption{Time series of the maximum perturbation $\theta_v$ (top) and the pressure associated with this maximum (bottom) in the moist experiment using the simple condensation scheme.}
 \label{fig:figure3-4}
@@ -138,9 +144,10 @@ Figure~\ref{fig:figure3-3} also shows the results of the moist experiment with C
  
 The minimum vertical pressure velocities in the moist tests are attained once the moist bubble reaches the tropopause. This can be determined by comparing the timescales in Figure~\ref{fig:figure3-3} to the time evolution of the bubble pressure (Figure~\ref{fig:figure3-4}). Figure~\ref{fig:figure3-4} also shows that the minimum in $\omega$ are associated with a maximum virtual potential temperature ($\theta_v$) perturbation, defined as the difference in $\theta_v$ from the initial reference state. The maximum $\theta_v$ perturbation is approximately invariant to bubble radius, indicating the difference in $\omega$ across resolutions are almost entirely a result of the $1/r_h$ scaling, as opposed to a change in available potential energy ($\sqrt{B_0 H}$ in equation~\ref{eq:eq3-3}). The scaling fits the moist experiments well since the horizontal scale of the moist bubbles do not change significantly as they ascend to their level of neutral buoyancy (i.e., the tropopause).
 
-\begin{figure}
+\begin{figure}[t]
 \begin{center}
 \noindent\includegraphics[width=20pc,angle=0]{chapter3/Figure5_crop.pdf}\\
+%\noindent\includegraphics[width=10pc,angle=0]{chapter3/Figure5_crop.pdf}\\
 \end{center}
 \caption{As in Figure~\ref{fig:figure3-3}, but for the moist experiments using the CAM5 stratiform scheme (‘stratus’) and the CAM5 stratiform scheme coupled with the CAM5 vertical diffusion routine (‘stratus$+$vdiff’).}
 \label{fig:figure3-5}
@@ -156,6 +163,7 @@ In all the moist experiments discussed so far, the physics time-step is set to 2
 \begin{figure}
 \begin{center}
 \noindent\includegraphics[width=20pc,angle=0]{chapter3/Figure6_crop.pdf}\\
+%\noindent\includegraphics[width=10pc,angle=0]{chapter3/Figure6_crop.pdf}\\
 \end{center}
 \caption{As in Figure~\ref{fig:figure3-5}, but for the physics time-step sensitivity experiments using the simple condensation scheme (top) and the CAM5 stratiform scheme (bottom).}
 \label{fig:figure3-6}
@@ -166,9 +174,10 @@ The results of the physics time-step experiments for the two different condensat
 \paragraph{CAM-FV} ~\\
 The time-step sensitivity experiment using the CAM5 stratiform routine has been repeated using the CAM-FV dynamical core (Figure~\ref{fig:figure3-7}). The magnitude of $\omega$ in CAM-FV is about 50\% less than in CAM-SE, at all resolutions (Figures \ref{fig:figure3-6} and \ref{fig:figure3-7}). This is consistent with simulations of tropical cyclones using these two dynamical cores – CAM-SE tends to have stronger storms as compared with CAM-FV \citep{RJ2012JAMES,RETAL2012ASL,RETAL2015JAS}. The qualitative behavior of the response to resolution and time-stepping is however, similar to CAM-SE – $\omega$ generally follow the scaling at small physics time-steps, but depart from the scaling at longer physics time-steps (Figure~\ref{fig:figure3-7}). Note that the $\omega$ field in the $2^{\circ}$ runs do not follow the scaling (not shown). To observe the scaling in CAM-FV at small physics time-steps, one must scale to a resolution other than $2^{\circ}$ (Figure~\ref{fig:figure3-7}).
 
-\begin{figure}
+\begin{figure}[t]
 \begin{center}
 \noindent\includegraphics[width=20pc,angle=0]{chapter3/Figure7_crop.pdf}\\
+%\noindent\includegraphics[width=10pc,angle=0]{chapter3/Figure7_crop.pdf}\\
 \end{center}
 \caption{As in Figure~\ref{fig:figure3-6}, but using the CAM-FV with second-order divergence damping. Note the analytical scaling (grey lines) have been scaled to the $1^{\circ}$ simulation in this plot, and the y-axis range in smaller, compared with Figure~\ref{fig:figure3-6}.}
 \label{fig:figure3-7}
@@ -178,9 +187,10 @@ The time-step sensitivity experiments in CAM-FV are repeated using the fourth-or
 
 The fourth-order, internally computed divergence damping coefficient was found to be about twice as large as that used by CAM-SE. An additional simulation using the $0.25^{\circ}$ grid and 225 s time-step, in which the fourth-order divergence damping coefficient is lowered by an order of magnitude, results in an increase in the magnitude of $\omega$ by from -20179.8 hPa/day to -24689.7 hPa/day. The time-series of the minimum vertical pressure velocities in this simulation is compared to the equivalent CAM-SE simulation, in Figure~\ref{fig:figure3-8}, along with the CAM-FV simulation using the default fourth order divergence damping coefficient. While the larger divergence-damping coefficient used in CAM-FV may explain a portion of the differences between the CAM-SE and CAM-FV solutions, it does not explain most of the differences between the two solutions (Figure~\ref{fig:figure3-8}). The lower magnitude $\omega$ in CAM-FV may be a result of the diffusive nature of finite-volume numerics and/or limiters in the CAM-FV dynamical core \citep{LR1997QJR}, but could also be related to unphysical numerical aspects of the continuous Galerkin method, potentially resulting in artificially large magnitude  in CAM-SE. Further testing is required to provide conclusive evidence of the design aspects leading to the differences in solutions between these two dynamical cores.
 
-\begin{figure}
+\begin{figure}[t]
 \begin{center}
-\noindent\includegraphics[width=25pc,angle=0]{chapter3/Figure8_crop.pdf}\\
+\noindent\includegraphics[width=20pc,angle=0]{chapter3/Figure8_crop.pdf}\\
+%\noindent\includegraphics[width=15pc,angle=0]{chapter3/Figure8_crop.pdf}\\
 \end{center}
 \caption{Time-series of the minimum in $\omega$ for three different moist bubble simulations using the CAM5 stratiform scheme and a physics time-step of 225 s, at the highest grid resolution. The CAM-SE run is labeled `ne120’, while a pair of CAM-FV simulations using the fourth-order divergence damping are depicted, one using the default divergence damping coefficient, and another simulation with the coefficient reduced by an order of magnitude.}
 \label{fig:figure3-8}
@@ -189,9 +199,10 @@ The fourth-order, internally computed divergence damping coefficient was found t
 \paragraph{Sensitivity to viscosity} ~\\
 Through reducing the specific humidity hyper-viscosity coefficient in CAM-SE by an order of magnitude, the vertical velocity scaling is nearly recovered using a 450 s time-step (Supplementary Figure~\ref{fig:sfigure3-2}). Through individually reducing the hyper-viscosity coefficients on the other state variables (temperature, pressure thickness, non-divergent and divergent winds), the solutions either did not improve the scaling as effectively as the coefficient for specific humidity, or the model failed (note that the specific value of the coefficients are chosen by model developers, in part, for numerical stability). For example, model failure was common when reducing the divergence damping coefficient. In the simulations that did not crash, reducing the divergence damping coefficient by an order of magnitude lead to an increase in the magnitude of the vertical motion at all resolutions, but it’s effect on the scaling is ambiguous, and not as clear as the experiment in which specific humidity coefficient is reduced (Supplementary Figure~\ref{fig:sfigure3-2}).
 
-\begin{figure}
+\begin{figure}[t]
 \begin{center}
-\noindent\includegraphics[width=35pc,angle=0]{chapter3/Figure9_crop.pdf}\\
+\noindent\includegraphics[width=30pc,angle=0]{chapter3/Figure9_crop.pdf}\\
+%\noindent\includegraphics[width=25pc,angle=0]{chapter3/Figure9_crop.pdf}\\
 \end{center}
 \caption{Time-series of the minimum $\omega$ in three different CAM-SE moist bubble simulations using the CAM5 stratiform scheme and a physics time-step of 450 s. The dashed line shows the results of an ne16 simulation scaled to the ne120 resolution using equation~\ref{eq:eq3-3}. The orange line denotes the ne120 resolution simulation, while the red line is an ne120 simulation with the specific humidity hyper-viscosity coefficient reduced by an order of magnitude.}
 \label{fig:figure3-9}
@@ -210,9 +221,10 @@ P(\omega_1) = \alpha P(\omega_0 / \alpha), \label{eq:eq3-8}
 \end{equation}
 where $P(\omega)$ is the probability density distribution of the vertical pressure velocity, the subscripts refer to two different resolutions, $\Delta x_0$ and $\Delta x_1$, and $\alpha$ is the ratio of the velocity scale at $\Delta x_0$ to the velocity scale at $\Delta x_1$. Assuming the characteristic buoyancy of parcels in a simulation is unchanged between two resolutions, then through assuming $D \propto \Delta x$, $\alpha = \Delta x_1 / \Delta x_0$ from equation~\ref{eq:eq3-3}.
 
-\begin{figure}
+\begin{figure}[t]
 \begin{center}
 \noindent\includegraphics[width=20pc,angle=0]{chapter3/Figure10_crop.pdf}\\
+%\noindent\includegraphics[width=10pc,angle=0]{chapter3/Figure10_crop.pdf}\\
 \end{center}
 \caption{Probability density distribution of negative  at all levels, and between $10{\circ}$N and $10^{\circ}$S, for four different aqua-planet simulations. An ne30 and ne120 simulation are depicted with colors, and the physics time-step used in the simulations are shown in different line styles. The ne30 solutions are expressed as ne30 solutions scaled to the ne120 resolution, as described in the text.}
 \label{fig:figure3-10}
@@ -242,6 +254,7 @@ While there may be other factors contributing to the resolution sensitivity of t
 \begin{figure}
 \begin{center}
 \noindent\includegraphics[width=25pc,angle=0]{chapter3/SFigure1.eps}\\
+%\noindent\includegraphics[width=15pc,angle=0]{chapter3/SFigure1.eps}\\
 \end{center}
 \caption{Global 400 hPa power spectral density of the temperature tendency arising from the CAM5 physics routines in the aqua-planet simulations.}
 \label{fig:sfigure3-1}
@@ -250,6 +263,7 @@ While there may be other factors contributing to the resolution sensitivity of t
 \begin{figure}
 \begin{center}
 \noindent\includegraphics[width=25pc,angle=0]{chapter3/SFigure2_crop.pdf}\\
+%\noindent\includegraphics[width=15pc,angle=0]{chapter3/SFigure2_crop.pdf}\\
 \end{center}
 \caption{Results of three moist bubble experiments using CAM-SE coupled to the CAM5 stratiform scheme, using a physics time-step of 450 s. Results are expressed as the minimum vertical pressure velocity, $\omega$, over the duration of each simulation as a function of initial bubble radius. Each experiment contains four simulations, with grid-spacing (top x-axis) and initial size of the bubble (bottom x-axis) progressively decreasing. The purple markers indicate an experiment in which the specific humidity hyper-viscosity coefficient is reduced by an order of magnitude. Similarly, the pink markers denote an experiment in which the divergence damping coefficient is reduced by an order of magnitude. The highest resolution divergence damping coefficient result is not shown since this configuration resulted in model failure.}
 \label{fig:sfigure3-2}

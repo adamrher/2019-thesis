@@ -24,7 +24,7 @@ Separating dynamics, tracer and physics grids introduces the added complexity of
 
 \begin{figure}[t]
 \begin{center}
-\noindent\includegraphics[width=35pc,angle=0]{chapter5/fig-overview.pdf}\\
+\noindent\includegraphics[width=30pc,angle=0]{chapter5/fig-overview.pdf}\\
 \end{center}
 \caption{An overview of the different grids in CAM-SE-CSLAM.}
 \label{fig:overview}
@@ -54,7 +54,7 @@ The CSLAM and physics grids are both finite-volume grids so existing CSLAM techn
 
 \begin{figure}[t]
 \begin{center}
-\noindent\includegraphics[width=30pc,angle=0]{chapter5/area-schematic.png}\\
+\noindent\includegraphics[width=25pc,angle=0]{chapter5/area-schematic.png}\\
 \end{center}
 \caption{Indices notation for (a) the $pg2$ grid, (b) the $pg3$ grid and (c) their exchange grid.}
 \label{fig:area-schematic}
@@ -139,7 +139,7 @@ Even if one could derive a reversible map for mapping ${\overline{\Delta p}}^{(p
 
 \begin{figure}[t]
 \begin{center}
-\noindent\includegraphics[width=40pc,angle=0]{chapter5/alg-schematic.png}\\
+\noindent\includegraphics[width=30pc,angle=0]{chapter5/alg-schematic.png}\\
 \end{center}
 \caption{Schematic illustration of the `negativity problem' in a single element. (a.) Initial CSLAM tracer values, (b.) mapped to $pg2$, (c) produces a tracer increment on $pg2$, (d.) with negative increments on the exchange grid overlying CSLAM cells in (a) that were initially zero and (e) driving those mixing ratios negative.}
 \label{fig:alg-schematic}
@@ -194,7 +194,7 @@ where $(\lambda,\theta)$ is latitude-longitude, is mapped from $pg2$ to $pg3$ gr
 
 \begin{figure}[t]
 \begin{center}
-\noindent\includegraphics[width=40pc,angle=0]{chapter5/mapping.pdf}\\
+\noindent\includegraphics[width=35pc,angle=0]{chapter5/mapping.pdf}\\
 \end{center}
 \caption{Mapping of idealized functions from $pg2$ (column 1) to $pg3$ (columns 2) and errors (column 3) using the new tendency algorithm only (row 1 and 3) and new tendency algorithm with the high-order pre-allocation (row 2 and 4). Column 4 shows the errors in mapping the same distributions from  $pg3$ to $pg2$ using traditional remapping (CSLAM technology).}
 \label{fig:mapping}
@@ -343,7 +343,7 @@ It is not obvious from the snapshots in Figure~\ref{fig:transx} whether the leng
 
 \begin{figure}[t]
 \begin{center}
-\noindent\includegraphics[width=40pc,angle=0]{chapter5/panel_ne20pg2-ne30pg2-ne30pg3.pdf}\\
+\noindent\includegraphics[width=35pc,angle=0]{chapter5/panel_ne20pg2-ne30pg2-ne30pg3.pdf}\\
 \end{center}
 \caption{(Left) Wavenumber-power spectrum of the temperature tendencies from the moist physics, near the 369 hPa level, (Middle) probability density distribution and (Right) the scaled probability density distribution of upward $\omega$ everywhere in the model. The scaled distributions are scaled to $ne30pg3$ using $\Delta x_{phys}$.}
 \label{fig:pgXpanel-lores}
@@ -380,7 +380,7 @@ The experiment described in the previous section is repeated here for a $ne120pg
  
  \begin{figure}[t]
 \begin{center}
-\noindent\includegraphics[width=40pc,angle=0]{chapter5/panel_ne80pg3_ne120pg2_ne120pg3.pdf}\\
+\noindent\includegraphics[width=35pc,angle=0]{chapter5/panel_ne80pg3_ne120pg2_ne120pg3.pdf}\\
 \end{center}
 \caption{As in Figure~\ref{fig:pgXpanel-lores}, but for the high resolution simulations. Asterisks indicate that $\Delta t_{phys}=675 s$, which is larger than that used for the default $ne120$ runs (see Table \ref{table:grids-hi}).}
 \label{fig:pgXpanel-hires}

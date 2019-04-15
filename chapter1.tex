@@ -1,26 +1,27 @@
 \subsection{A brief history of Atmospheric General Circulation Models}
 
-The atmosphere consists of a large number of moving parts, operating over an impressive range of space-time scales. Despite the enormous complexity of the atmosphere, and against all odds, it was eventually realized that the general circulation of the atmosphere, which refers to hemispheric overturning circulations such as the Hadley and Ferrell Cells, including synoptic scale disturbances embedded within the jet-stream, can be modeled using surprisingly simple idealizations. In the 1950's, scientist Norman Phillips noted that  ``dishpan" experiments --- a rotating pan of water heated on its edges with an electric coil --- appear remarkably similar to large-scale weather patterns in the atmosphere \citep{WEART2008},
+The atmosphere consists of a large number of moving parts, operating over an impressive range of space-time scales. Despite the enormous complexity of the atmosphere, and against all odds, it was eventually realized that the general circulation of the atmosphere ---referring to the large-scale overturning circulations such as the Hadley and Ferrell Cells, including synoptic scale disturbances embedded within the jet-stream--- can be modeled using surprisingly simple idealizations. In the 1950's, scientist Norman Phillips noted that  ``dishpan" experiments ---a rotating pan of water heated on its edges with an electric coil--- appear remarkably similar to large-scale weather patterns in the atmosphere \citep{WEART2008},
 \begin{displayquote}
 {\em{at least the gross features of the general circulation of the atmosphere can be predicted without having to specify the heating and cooling in great detail.}}
 \end{displayquote}
-Inspired by this observation, Phillips developed a 2-layer numerical model of the atmosphere using a simplified set of equations and idealized heating of the lower layer. His model produced a realistic looking jet-stream with synoptic disturbances. Like the dishpan experiments, his numerical model was able to produce the large-scale features of the atmosphere while neglecting finer-scale processes thought to be important in the atmosphere. The Phillips model is considered the first Atmosphere General Circulation Model (AGCM) and was extremely coarser in resolution with horizontal grid spacing $\Delta x = 22.5^{\circ}$ \citep{WEART2008}.
+Inspired by this observation, Phillips developed a 2-layer numerical model of the atmosphere using a simplified set of equations and idealized heating of the lower layer. His model produced a realistic looking jet-stream with synoptic disturbances. Like the dishpan experiments, his numerical model was able to produce the large-scale features of the atmosphere while neglecting finer-scale processes thought to be important in the atmosphere. The Phillips model is considered the first Atmosphere General Circulation Model (AGCM) and was extremely coarse in resolution with horizontal grid spacing $\Delta x = 22.5^{\circ}$ \citep{WEART2008}.
 
-Phillips' AGCM only applied to the mid-latitudes; models developed by \cite{METAL1965MWR, HH1980JAS} solidified the idea that relatively simple parameterizations of diabatic heating can produce realistic tropical circulations. The study of \cite{HH1980JAS} is in particular quite remarkable in that it does not contain any explicit representation of moisture. Moist processes and radiative cooling were instead parameterized as a simple newtonian relaxation of potential temperature to a modestly unstable reference profile. Despite the crudeness of this approximation, a realistic Hadley Cell is is simulated. 
+Phillips' AGCM only applies to the mid-latitudes; models developed by \cite{METAL1965MWR, HH1980JAS} solidified the idea that relatively simple parameterizations of diabatic heating can produce realistic tropical circulations. The study of \cite{HH1980JAS} is in particular quite remarkable in that it does not contain any explicit representation of moisture. Moist processes and radiative cooling were instead parameterized as a simple newtonian relaxation of potential temperature to an inventive reference profile. Even with the crudeness of this approximation, a realistic Hadley Cell is simulated. 
 
-\cite{METAL1965MWR} explicitly simulates advection of water vapor by the resolved dynamics, parameterizes convection and clouds using a critical lapse rate approach and super-saturation criteria, and radiation using a radiative transfer model. The \cite{METAL1965MWR} AGCM is significantly more complex than any AGCM that had come before, and is structurally similar to modern AGCMs. The horizontal grid spacing of the Manabe et al. AGCM is $\Delta x = 4.5^{\circ}$
+\cite{METAL1965MWR} explicitly simulates advection of water vapor by the resolved dynamics, parameterizes convection and clouds using a critical lapse rate approach and super-saturation criteria, and radiation using a radiative transfer model. The \cite{METAL1965MWR} AGCM is significantly more complex than any AGCM that had come before, and is structurally similar to modern AGCMs. The horizontal grid spacing of the Manabe et al. model is $\Delta x = 4.5^{\circ}$
 
 This brief history of AGCM development is intended to provide the reader with the reason AGCMs are ran on grids that cannot resolve and therefore largely ignore a myriad of scales and processes. The short answer --- because it still works. But with the vastly greater computational power realized over the decades following the first AGCM models, scientists have simulated finer and finer grid resolutions, and with this comes a whole new set of challenges. The title of this thesis --- understanding resolution sensitivity in the Community Atmosphere Model --- is focused on one of these problems in one AGCM. 
 
-Standard convergence tests in the Community Atmosphere Model (CAM) and it's predecessor versions result in weak, or non-convergent solutions with increasing horizontal resolution \citep{KW1991JGR,WETAL1995CD,W1999T,W2008TELLUS,LETAL2011TELLUS,RJ2011MWR,RETAL2012ASL,OETAL2013JCLIM,RETAL2013JCLIM,ZetAl2014JCb,LETAL2015JCLIM}. While this has been a documented feature of the model since it's inception, from a strict computational fluid dynamics perspective this is not acceptable model behavior \citep{W2008TELLUS}. The following sections provide a review of these convergence studies, while also documenting the major model developments, which has been increasing in complexity for over thirty years.
+Standard convergence tests in the Community Atmosphere Model (CAM) and its predecessor versions result in weak, or non-convergent solutions with increasing horizontal resolution \citep{KW1991JGR,WETAL1995CD,W1999T,W2008TELLUS,LETAL2011TELLUS,RJ2011MWR,RETAL2012ASL,OETAL2013JCLIM,RETAL2013JCLIM,ZetAl2014JCb,LETAL2015JCLIM}. While this has been a documented feature of the model since not long after its inception, from a strict computational fluid dynamics perspective this is not acceptable model behavior \citep{W2008TELLUS}. The following sections provide a review of these convergence studies, while also documenting the major model developments, which has been increasing in complexity for over thirty years.
 
 \subsection{CCM1}
 
-The National Center for Research (NCAR) Community Climate Model, version 1 \citep{CCM1} is the successor to CCM0 and \cite{KW1991JGR} provides the first convergence study using a NCAR climate model. The CCM1 dynamical core solves the equations of motion and tracer advection using the global-spectra transform method. Explicit numerical dissipation is added using biharmonic $\nabla^{4}$ diffusion, and a moisture corrective factor $q-flux$ is used to compensate for clipping of negative water vapor concentrations that arises from oscillatory errors typical of spectral methods. The model consists of 12 vertical levels using a $\sigma$ coordinate. The parameterization of clouds in CCM1 is broadly similar to \citep{METAL1965MWR}, and depends on lapse rate and grid cell relative humidity. A stable stratiform cloud forms with cloud fraction $0.95$  when a grid cell is super-saturated and the lapse-rate is stable. If the lapse rate is steeper than the moist adiabat, the total cloud fraction of the unstable layer is set to $0.3$, and the level above the unstable layer is set to $0.95$, approximating an anvil cloud top. Radiative transfer is parameterized after \cite{CCM1RAD}. A parameterization of momentum flux divergence due to stationary gravity waves is included \citep{M1987JAS}. 
+The National Center for Research (NCAR) Community Climate Model, version 1 \citep{CCM1} is the successor to CCM0 and \cite{KW1991JGR} provides the first convergence study using a NCAR climate model. The CCM1 dynamical core solves the equations of motion and tracer advection using the global-spectra transform method. Explicit numerical dissipation is added using biharmonic $\nabla^{4}$ diffusion, and a moisture corrective factor $q-flux$ is used to compensate for clipping of negative water vapor concentrations that arises from oscillatory errors typical of spectral methods. The model consists of 12 vertical levels using a $\sigma$ coordinate. The parameterization of clouds in CCM1 is broadly similar to \cite{METAL1965MWR}, and depends on lapse rate and grid cell relative humidity. A stable stratiform cloud forms with cloud fraction $0.95$  when a grid cell is super-saturated and the lapse-rate is stable. If the lapse rate is steeper than the moist adiabat, the total cloud fraction of the unstable layer is set to $0.3$, and the level above the unstable layer is set to $0.95$, approximating an anvil cloud top. Radiative transfer is parameterized after \cite{CCM1RAD}. A parameterization of momentum flux divergence due to stationary gravity waves is included \citep{M1987JAS}. 
 
  \begin{table}
- \caption{\cite{KW1991JGR} experimental design.}
+ \caption{\cite{KW1991JGR} experimental design and global means.}
  \centering
+ \scriptsize
  \begin{tabular}{llcccc}
  \hline
  Variable & $4.5^{\circ}$ (R15) & $2.8^{\circ}$ (T42) & $1.9^{\circ}$ (T63)  & $1.1^{\circ}$ (T106) \\
@@ -34,36 +35,157 @@ The National Center for Research (NCAR) Community Climate Model, version 1 \cite
  \label{tbl:table1-1}
  \end{table}
 
-The convergence study of \cite{KW1991JGR} consists of an ensemble of simulated January's. Considering the computational limitations at the time, an impressive range of resolutions are covered in this study (Table~\ref{tbl:table1-1}). The boundary conditions contain real-world topography, and prescribed seasonally varying sea-surface temperatures (SST). The only parameters that vary with resolution are the physics time-step, $\Delta t_{phys}$, the standard deviation of the sub-grid topography (for the gravity wave drag parameterization), and the biharmonic diffusion coefficient for numerical dissipation. The coefficients of biharmonic diffusion were selected to preserving the slope of kinetic energy spectrum \citep[see][]{B1991JCLIM}. The lowest resolution simulation (R15) statistics are found by averaging the January data from 11 simulated annual cycles, and data from the next highest resolution (T42) are computed from 6 annual cycles. In the higher resolution simulations (T63 and T106), three simulations each were initialized from Dec. 15th of the T42 ensembles, and integrated through the month of January.
+The convergence study of \cite{KW1991JGR} consists of an ensemble of simulated January's. Considering the computational limitations at the time, an impressive range of resolutions are covered in this study (Table~\ref{tbl:table1-1}). The boundary conditions contain real-world topography, and prescribed seasonally varying sea-surface temperatures (SST). The only parameters that vary with resolution are the physics time-step, $\Delta t_{phys}$, the standard deviation of the sub-grid topography (for the gravity wave drag parameterization), and the biharmonic diffusion coefficient for numerical dissipation. The coefficients of biharmonic diffusion were selected to preserve the slope of kinetic energy spectrum \citep[see][]{B1991JCLIM}. The lowest resolution simulation (R15) statistics are found by averaging the January data from 11 simulated annual cycles, and data from the next highest resolution (T42) are computed from 6 annual cycles. In the higher resolution simulations (T63 and T106), three simulations each were initialized from Dec. 15th of the T42 ensembles, and integrated through the month of January.
 
 Table~\ref{tbl:table1-1} provides the global mean total cloud fraction and total precipitable water from the four simulations. With increasing resolution, the model generally becomes less cloudy and drier, although one should probably take precaution interpreting the highest resolution runs, since the values are computed from a limited sample. \cite{KW1991JGR} show that the magnitude of the upward and downward vertical motion increases with resolution, and argues the greater subsidence is responsible for the drier and less cloudy atmosphere at higher resolutions. In the zonal mean, it was discussed that the width of ascending branch of the Hadley Cell was found to be grid limited at the lower resolutions, containing only $3-4$ grid cells in the R15 case, but that at the higher resolutions (T63 and T106) the width had converged and reached the ``natural scale of the phenomena."
 
 \subsection{CCM2}
 
-CCM, version 2 (CCM2) is described in \cite{CCM2} and the convergence study in \cite{WETAL1995CD}. CCM2 uses the spectral-transform dynamical core from CCM1, but water vapor is transported using a semi-Lagrangian method \citep{WR1994TELLUS}, since oscillatory errors from the spectral method in CCM1 too often drove water vapor concentrations negative. CCM2 contains 18 vertical levels, and uses a hybrid-$\sigma$ vertical coordinate. The physical parameterizations have undergone a major overhaul. CCM2, unlike its predecessor, includes a diurnal cycle and atmospheric absorption of solar radiation. Convection is handled through a mass flux scheme \citep{H1994JGR}. The planetary boundary layer scheme is described in \cite{HB1993JCLIM} and includes non-local, up-gradient mixing. The stratiform cloud scheme has added dependencies on vertical motion and static stability, and introduces a height varying relative humidity threshold to distinguish mid-to-high level stratus from marine stratocumulus clouds \citep{KETAL1994JGR}.
+CCM, version 2 (CCM2) is described in \cite{CCM2} and the convergence study in \cite{WETAL1995CD}. CCM2 uses the eulerian spectral dynamical core from CCM1, but water vapor is transported using a semi-Lagrangian method \citep{WR1994TELLUS}, since oscillatory errors from the spectral method in CCM1 too often drove water vapor concentrations negative. CCM2 contains 18 vertical levels, and uses a hybrid-$\sigma$ vertical coordinate. The physical parameterizations have undergone a major overhaul. CCM2, unlike its predecessor, includes a diurnal cycle and atmospheric absorption of solar radiation. Convection is handled through a mass flux scheme \citep{H1994JGR}. The planetary boundary layer scheme is described in \cite{HB1993JCLIM} and includes non-local, up-gradient mixing. The stratiform cloud scheme has added dependencies on vertical motion and static stability, and introduces a height varying relative humidity threshold to distinguish mid-to-high level stratus from marine stratocumulus clouds \citep{KETAL1994JGR}.
 
-\cite{WETAL1995CD} is unique in that consists of two convergence tests, one with fixed cloud parameters across resolutions (``unmodified parameterizations"), and one that contains resolution dependent cloud parameters to minimize changes in total cloud fraction with resolution (``modified parameterizations"). The impact of drying at higher resolution in CCM1 (Table~\ref{tbl:table1-1}) may be avoided through decreasing the relative humidity thresholds in the cloud parameterization \citep{KETAL1994JGR} to reduce the dependency of cloud fraction on resolution. They were fairly successful; after tuning, total cloud fraction only varied from $0.58$ at low resolution (R15) to $0.55$ at high resolution (T106; compare to Table~\ref{tbl:table1-1}).
+\cite{WETAL1995CD} is unique in that consists of two convergence tests, one with fixed cloud parameters across resolutions (``unmodified parameterizations"), and one that contains resolution dependent cloud parameters to minimize changes in total cloud fraction with resolution (``modified parameterizations"). They reasoned that the impact of drying at higher resolution on cloud fraction may be avoided through decreasing the relative humidity thresholds in the cloud parameterization \citep{KETAL1994JGR}. 
 
  \begin{table}
- \caption{\cite{WETAL1995CD} experimental design.}
+ \caption{\cite{WETAL1995CD} experimental design and global means. The modified parameter experiment pertains to the bottom half of the table.}
  \centering
+ \scriptsize
  \begin{tabular}{llccc}
  \hline
  Variable & $3.75^{\circ}$ (T31) & $2.8^{\circ}$ (T42) & $1.9^{\circ}$ (T63)  & $1.1^{\circ}$ (T106) \\
  \hline
    $\nabla^{4}$ coefficient ($m^4/s$) & $2.0 \times 10^{16}$ & $1.0 \times 10^{16}$ & $2.0 \times 10^{15}$ & $1.0 \times 10^{15}$ \\
-   $\Delta t_{phys}$ (s) & 450 & 450 & 450 & 450 \\
+   $\Delta t_{s}$ (s) & 450 & 450 & 450 & 450 \\
+   $\tau_{conv}$ (s) & 1200 & 1200 & 1200 & 1200 \\   
    Total Cloud Fraction & 0.56 & 0.54 & 0.52 & 0.50 \\
    Total Precipitable Water (mm) & 24.3 & 23.9 & 22.6 & 22.5 \\
    Convective Precipitation (mm/day) & 2.62 & 2.58 & 2.56 & 2.55 \\
-   Stratiform Precipitation (mm/day) & 0.83 & 0.89 & 0.93 & 1.08 \\   
+   Stratiform Precipitation (mm/day) & 0.83 & 0.89 & 0.93 & 1.08 \\  
+   \hline
+   $\Delta t_{phys}$ (s) & 1200 & 1200 & 720 & 450 \\
+   $\tau_{conv}$ (s) & 3600 & 3600 & 1800 & 1200 \\
+   Total Cloud Fraction & 0.55 & 0.55 & 0.54 & 0.55 \\
+   Total Precipitable Water (mm) & 24.0 & 23.6 & 22.9 & 22.4 \\
+   Convective Precipitation (mm/day) & 2.66 & 2.63 & 2.65 & 2.52 \\
+   Stratiform Precipitation (mm/day) & 0.78 & 0.85 & 0.90 & 1.04 \\    
  \hline
  \end{tabular}
  \label{tbl:table1-2}
  \end{table}
 
-Table~\ref{tbl:table1-2} shows the results of the convergence tests in \cite{WETAL1995CD} in the unmodified parameterizations simulations. I emphasize the unmodified simulations since this thesis aims to understand why solutions change with resolution, rather than mitigate changes in resolution through tuning. The statistics refer to January means, and are directly comparable to the CC1 convergence test (Table~\ref{tbl:table1-1}). The rationale for fixing the physics time-step is articulated more clearly in \cite{W2013QJRMS}, but arises from a competition between the convective scheme \citep[i.e.,;][]{H1994JGR}, which remove instability at a specified rate, with stratiform cloud schemes, which remove instability instantaneously. Similar to CCM1, cloud fraction and total precipitable water decrease with resolution. The convective precipitation rate decreases with resolution while stratiform precipitation increases with resolution.
+Table~\ref{tbl:table1-2} shows the results of the convergence tests in \cite{WETAL1995CD} in both the modified and unmodified parameterizations simulations. The period are for the mean of an ensemble of January, and therefore directly comparable to the CCM1 study \citep{KW1991JGR}. Note the use of different $\Delta t_{phys}$ in two experiments. Through comparing the T106 simulations in the two experiments, one can deduce the impact of tuning, since they use the same $\Delta t_{phys}$. While the cloud fractions are different, with the modified case containing more clouds, the total precipitable water, convective and stratiform precipitation are very similar. 
+
+The cloud fraction decreases with resolution in the unmodified experiments, but is approximately invariant with resolution in the modified case, as intended. Both the modified and unmodified show a similar resolution sensitivity of total precipitable water, convective and stratiform precipitation to resolution. \citep{WETAL1995CD} chose to preserve a relationship between the $\Delta t_{phys}$ and the convective time-scale $\tau_{conv}$ used in the mass-flux convection scheme \citep{H1994JGR} $\tau_{conv} \sim 3 \times \Delta t_{phys}$. They discuss that the amount of instability removed in a time-step by the convection scheme is proportional to $\Delta t_{phys}$, and any remaining instability is removed instantaneously by the stratiform cloud scheme. This dependency can be counteracted through changing $\tau_{conv}$ in proportion, which is likely responsible for the similar values of convective precipitation in both the modified and unmodified cases.
 
 \subsection{CAM3}
+
+The next version of the NCAR climate model lineage in which a convergence study is available\footnote{The intervening versions CCM3 and CAM2 don't appear to have published a convergence study, to the authors knowledge.} is referred to as the Community Atmosphere Model, version 3 and is described is \cite{CAM3}. Like CCM2, CAM3 uses the eulerian spectral dynamical core with semi-Lagrangian tracer transport and biharmonic diffusion. CAM3 has 26 vertical levels, and uses a hybrid-$\sigma$ terrain following coordinate. The \citep{H1994JGR} convection scheme from CCM2 now only handles shallow convection; the deep convection is parameterized after \cite{ZM1995AO}, which uses a CAPE closure. The stratiform scheme consider both liquid and ice cloud amounts \citep{RK1998JCLIM,ZETAL2003JGR}, and still contains a height dependent relative humidity threshold. A modification to the longwave treatment of water vapor is described in \cite{CETAL2002JGR}.
+
+ \begin{table}
+ \caption{\cite{W2008TELLUS} experimental design and global means.}
+ \centering
+ \scriptsize
+ \begin{tabular}{llccc}
+ \hline
+ Variable & $2.8^{\circ}$ (T42) & $1.4^{\circ}$ (T85) & $0.7^{\circ}$ (T170) & $0.35^{\circ}$ (T340)\\
+ \hline
+   $\nabla^{4}$ coefficient ($m^4/s$) & $1.0 \times 10^{16}$ & $1.0 \times 10^{15}$ & $1.0 \times 10^{14}$ & $2.25 \times 10^{13}$ \\      
+   $\Delta t_{phys}$ (s) & 300 & 300 & 300 & 300 \\
+   Total Precipitable Water (mm) & 20.21 & 19.63 & 19.13 & 18.75 \\
+   Convective Precipitation (mm/day) & 1.71 & 1.59 & 1.44 & 1.36 \\
+   Stratiform Precipitation (mm/day) & 1.11 & 1.38 & 1.62 & 1.75 \\
+   \hline
+   $\Delta t_{phys}$ (s) & 2400 & 1200 & 600 & 300 \\
+   Total Precipitable Water (mm) & 19.57 & 19.39 & 19.18 & 18.75 \\
+   Convective Precipitation (mm/day) & 1.85 & 1.76 & 1.55 & 1.36 \\
+   Stratiform Precipitation (mm/day) & 0.89 & 1.17 & 1.51 & 1.75 \\      
+ \hline
+ \end{tabular}
+ \label{tbl:table1-3}
+ \end{table}
+
+Breaking with the previous convergence studies, \cite{W2008TELLUS} uses an aqua-planet configuration \citep[`CONTROL' in][]{NH2000ASL}, which is a planet made up entirely of ocean with a fixed, zonally symmetric SST profile and a perpetual equinox. Without the seasonal cycle, aqua-planets produce equilibrium statistics from a shorter simulation, and the final 12 months of a 14 month simulation are analyzed. \cite{W2008TELLUS} experiments with a variety of combinations of $\Delta t_{phys}$ and grid resolution, and only a selection of the simulations are shown in Table~\ref{tbl:table1-3}. 
+
+As with the previous convergence studies, the total precipitable water and convective precipitation rate decrease with resolution, stratiform precipitation increases. In contrast to \cite{WETAL1995CD}, $\tau_{conv}$ in both the shallow and deep convection schemes are fixed at their default values, regardless of $\Delta t_{phys}$. It is interesting to see the dependence of the convection scheme on $\Delta t_{phys}$ discussed in \cite{WETAL1995CD} and explored in more detail in \cite{W2013QJRMS}. The convective precipitation rate in the T42 simulations is less using the smaller $\Delta t_{phys}$, consistent with the discussed mechanism (Table~\ref{tbl:table1-3}). Interestingly, the stratiform precipitation rate is larger and the total precipitable water indicates the atmosphere is drier, using the smaller $\Delta t_{phys}$, which is in the same direction as with increasing resolution. That is, reducing $\Delta t_{phys}$ while also increasing the resolution increases the sensitivity of the model \cite{W2008TELLUS}. In addition, the study finds that reducing the diffusion coefficients with resolution impacts the precipitation rates in the same direction as increasing the resolution, and also contributed to overall resolution sensitivity.
+ 
 \subsection{CAM4}
+
+CAM, version 4 (CAM4) is described in \citep{CAM4}. The major updates to the CAM4 physics are primarily the modifications to the deep convection scheme \citep{ZM1995AO}, including the incorporation of convective momentum transport \citep{RR2008JC} and incorporating entrainment into the CAPE \citep{RB1992JAS,NRJ2008JC}. A dynamic aerosol model, the Bulk Aerosol Model was also incorporated into CAM4.
+
+ \begin{table}
+ \caption{Experimental design and global means in (top) \cite{HR2017JCLIM} and (bottom) \cite{RETAL2013JCLIM}.}
+ \centering
+ \scriptsize
+ \begin{tabular}{llccc}
+ \hline
+Variable & $ne16$ ($208.5$ km) & $ne30$ ($111.2$ km) & $ne60$ ($55.6$ km) & $ne120$ ($27.8$ km)\\
+   \hline
+   $\nabla^{4}$ coefficient ($m^4/s$) & $6.0 \times 10^{15}$ & $9.0 \times 10^{14}$ & $1.0 \times 10^{14}$ & $1.0 \times 10^{13}$ \\
+   Cloud Fraction & 0.62 & 0.57 & 0.51 & 0.42 \\ 
+   Total Precipitable Water (mm) & 20.08 & 19.65 & 19.38 & 19.10 \\
+   Total Precipitation (mm/day) & 2.96 & 3.05 & 3.08 & 3.08 \\
+   Convective Precipitation (mm/day) & 1.38 & 1.15 & 0.97 & 0.79 \\
+   Stratiform Precipitation (mm/day) & 1.58 & 1.90 & 2.12 & 2.29 \\      
+ \hline
+ Variable & $240$ km & $120$ km & $60$ km & $30$ km\\
+ \hline
+   $\nabla^{4}$ coefficient ($m^4/s$) & $5.0 \times 10^{15}$ & $5.0 \times 10^{14}$ & $5.0 \times 10^{13}$ & $5.0 \times 10^{12}$ \\      
+   Total Precipitation (mm/day) & 2.93 & 3.04 & 3.10 & 3.19 \\
+   Convective Precipitation (mm/day) & 1.40 & 1.23 & 1.06 & 0.90 \\
+   Stratiform Precipitation (mm/day) & 1.53 & 1.81 & 2.04 & 2.29 \\
+ \hline
+ \end{tabular}
+ \label{tbl:table1-4}
+ \end{table}
+
+The default dynamical core has been changed to a finite-volume model after \cite[CAM-FV;][]{L2004MWR}, however there are no convergence studies the author is aware of that uses more than two grid resolutions in CAM-FV. Instead this section will highlight the convergence study \cite{RETAL2013JCLIM} using the Model for Prediction Across Scales dynamical core \citep[CAM-MPAS;][]{Ringler:2008} and the study in of \cite{HR2017JCLIM} (i.e., Chapter~\ref{sec:chapter2}) using the spectral-element dynamical core \citep[CAM-SE;][]{TF2010JCP,DetAl2012IJHPCA}. All aspects in of the CAM-MPAS and CAM-SE convergence experiments are the identical except for the dynamical cores since they model data come from the same project \citep{L2013EOS}. Both dynamical cores contain explicit $\nabla^4$ hyper-diffusion, with the coefficients shown in Table~\ref{tbl:table1-4}, and $\Delta t_{phys}$ is fixed at 600 s at all resolutions. The simulations use an aqua-planet configuration, although the SST profile \citep[`QOBS' in][]{NH2000ASL} is different from the CAM3 study \citep{W2008TELLUS}. The global means in Table~\ref{tbl:table1-4} are from the final 4.5 years of a 5 year integration.
+
 \subsection{CAM5}
+
+CAM, version 5 is documented in \citep{CAM5}. The stratiform scheme has been changed significantly \citep{PETAL2014JCLIM}, including stratus-radiation-turbulence interactions that improves the simulation of marine stratocumulus. Stratiform microphysics have been updated to include prognostic number concentrations of liquid and ice \citep{MG2008JC}. The shallow convection scheme has been replaced with a CIN based mass flux scheme \citep{PB2009JC}, and the planetary boundary layer scheme replaced to incorporate moist turbulence \citep{BC2009JCLIM}.
+
+ \begin{table}
+ \caption{\cite{ZetAl2014JCb} experimental design and global means.}
+ \centering
+ \scriptsize
+ \begin{tabular}{llcccc}
+ \hline
+Variable & $ne15$ ($222.4$ km) & $ne120$ ($27.8$ km)\\
+ \hline
+   $\nabla^{4}$ coefficient ($m^4/s$) & $1.0 \times 10^{16}$ & $1.0 \times 10^{12}$ \\
+   Total Cloud Fraction & 0.63 & 0.64 \\
+   Total Precipitable Water (mm) & 32.8 & 31.7 \\
+   Convective Precipitation (mm/day) & 3.66 & 2.25 \\
+   Stratiform Precipitation (mm/day) & 0.49 & 1.85 \\
+ \hline
+ \end{tabular}
+ \label{tbl:table1-5}
+ \end{table}
+
+The CAM-FV dynamical core is still the default, but a convergence study using CAM-SE is discussed here. \cite{ZetAl2014JCb} perform a convergence study using only two grid resolutions, but was intended to evaluate a variable-resolution configuration whose grid resolution straddled these end-member resolutions. They use an aqua-planet configuration, with the same SST configuration as in \cite{W2008TELLUS} \citep[`CONTROL' in][]{NH2000ASL}, and $\Delta t_{phys}$ is fixed at 1800 s at all resolutions. The aqua-planets are spun-up for two months, and an additional two years are simulated.
+
+Table~\ref{tbl:table1-5} shows that global mean statistics in the simulations. Total cloud fraction is remarkably insensitive despite an 8-fold increase in resolution. Convective precipitation decreases in the usual sense with resolution, while stratiform precipitation increases by almost a factor of four. The atmosphere becomes drier with resolution, by about 1 mm/day.
+
+\subsection{CAM6}
+
+CAM, version 6 (CAM6; \url{https://ncar.github.io/CAM/doc/build/html/users_guide/index.html}) contains a replacement of the stratiform scheme, planetary boundary layer scheme and shallow convection scheme with a unified assumed probability distribution function scheme referred to as the Cloud Layer Unified by Binormals \citep{GETAL2002JAS}. The gravity wave drag scheme has been replaced with an anisotropic gravity wave drag scheme that uses the orientation of topographic ridges to determine the direction of propagation.
+
+ \begin{table}
+ \caption{Experimental design and global means from Chapter~\ref{sec:chapter6}.}
+ \centering
+ \scriptsize
+ \begin{tabular}{lcccccc}
+ \hline
+ Variable & $ne20$ & $ne30$ & $ne40$ & $ne60$ & $ne80$ & $ne120$ \\
+   \hline
+   $\nabla^{4}$ coefficient ($m^4/s$) & $1.5 \times 10^{15}$ & $4.0 \times 10^{14}$ & $1.5 \times 10^{14}$ & $4.0 \times 10^{13}$  & $1.5 \times 10^{13}$ & $4.0 \times 10^{12}$\\
+    $\Delta t_{phys}$ (s) & 2700 & 1800 & 1350 & 900 & 675 & 450 \\
+   Cloud Fraction & 0.844 & 0.835 & 0.824 & 0.810 & 0.804 & 0.800 \\ 
+   Total Precipitable Water (mm) & 23.31& 23.01 & 22.62 & 22.25 & 21.93 & 21.72 \\
+   Convective Precipitation (mm/day) & 1.91 & 1.83 & 1.68 & 1.47 & 1.29 & 1.08 \\
+   Stratiform Precipitation (mm/day) & 1.26 & 1.42 & 1.60 & 1.85 & 2.05 & 2.22 \\      
+ \hline
+ \end{tabular}
+ \label{tbl:table1-6}
+ \end{table}
+
+Chapter~\ref{sec:chapter6} contains a convergence study of CAM6 using the CAM-SE dynamical core, with a new dry mass vertical coordinate \citep{LetAl2018JAMES}, and the Conservative Semi-Lagrangian Advection Method for tracer advection \citep[CSLAM; ][]{LTOUNGK2017MWR}, in which the physics are evaluated on the CSLAM grid \citep{HL2018MWR}. Table~\ref{tbl:table1-6} shows the results of a convergence study in an aqua-planet configuration \citep[`QOBS' SST profile in][]{NH2000ASL}.

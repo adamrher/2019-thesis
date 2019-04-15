@@ -3,7 +3,7 @@ An increasing number of numerical methods publications in the atmospheric scienc
 
 \begin{figure}[t]
 \begin{center}
-\noindent\includegraphics[width=25pc,angle=0]{chapter4/gll.pdf}\\
+\noindent\includegraphics[width=20pc,angle=0]{chapter4/gll.pdf}\\
 \end{center}
 \noindent
 \caption{Example of CAM-SE GLL quadrature grids, marked with red filled circles, (a \& c) on the cubed-sphere and (b \& d) in an element. (a)-(b) and (c)-(d) use $4\times 4$ ($np=4$) and $8\times 8$ ($np=8$) GLL quadrature points in each element, respectively. (a) and (c) have the same average grid-spacing at the Equator (7.5$^\circ$) which is obtained by using (a) $4\times 4$ ($ne=4$) and (b) $2\times 2$ ($ne=2$) elements on each cubed-sphere face/panel, respectively. The element boundaries are marked with thick light blue lines. The grid configurations shown on (a) and (c) are referred to as $ne4np4$ and $ne2np8$, respectively.}
@@ -24,7 +24,7 @@ Figure~\ref{fig:se-schematic} is a schematic illustrating in one-dimension how g
 
 \begin{figure}[t]
 \begin{center}
-\noindent\includegraphics[width=35pc,angle=0]{chapter4/se-schematic-arh-CROP.pdf}\\
+\noindent\includegraphics[width=27pc,angle=0]{chapter4/se-schematic-arh-CROP.pdf}\\
 \end{center}
 \caption{A one-dimensional schematic showing the relationship between the basis functions, the quadrature nodes and the proposed physics grid, over the coarse of a time-step. The filled circles are the GLL quadrature points in each element, which are connected by a Lagrange polynomials basis (curves). (a) Smooth initial condition are (b) advanced by the dynamics one Runge-Kutta step (blue), and (c) shows the solution after applying the DSS operator. Applying (d) grid-scale forcing to an element boundary node, (e) the basis representation is clearly $C^0$ at the element boundary. In contrast, (d) applying grid-scale forcing to an interior node (e) results in a smooth, $C^{\infty}$ continuous field. (f),(i) Vertical bars pertain to the values on the physics grid, found through integrating the basis functions over the control volumes.}
 \label{fig:se-schematic}
@@ -34,7 +34,7 @@ To test the degree to which nodal solutions depend on within-element position, a
 
 \begin{figure}[t]
 \begin{center}
-\noindent\includegraphics[width=35pc,angle=0]{chapter4/temp_pdf_200bins_30min_trX25min.pdf}\\
+\noindent\includegraphics[width=30pc,angle=0]{chapter4/temp_pdf_200bins_30min_trX25min.pdf}\\
 \end{center}
 \caption{Probability density distribution of instantaneous upward $\omega$ in a pair of aqua-planet simulations using CAM4 physics. Figure is constructed from one year of six hourly data, at all vertical levels. (a) $ne30np4$ configuration conditionally sampled for interior, edge and corner node control volumes, and similarly (b) for the $ne30pg3$ configuration. The curves in (b) are overlain in (a) in grey, and similarly the curves in (a) are overlain in (b). Note the consistently larger magnitude $\omega$ for boundary nodes compared with interior nodes in (a), and that the bias is substantially reduced through mapping to a quasi-equal area physics grid.}\label{fig:omega-se-volumes}
 \end{figure}
@@ -56,7 +56,7 @@ Here we focus on CAM-SE, however, in principle the methods apply to any element-
 
 \begin{figure}[t]
 \begin{center}
-\noindent\includegraphics[width=25pc,angle=0]{chapter4/np4_pg3.pdf}\\
+\noindent\includegraphics[width=20pc,angle=0]{chapter4/np4_pg3.pdf}\\
 \end{center}
 \caption{A schematic illustration of an element, indicating the relationship between (left) the dynamical core grid, and (right) the proposed quasi-equal area physics grid. The physics grid contains $pg\times pg=3\times 3$ grid cells in each element.}
 \label{fig:np4_pg3}
@@ -125,7 +125,7 @@ The flow field of the baroclinic wave test is used to drive the terminator ``toy
 
 \begin{figure}[t]
 \begin{center}
-\noindent\includegraphics[width=25pc,angle=0]{chapter4/terminator_iCLy.pdf}\\
+\noindent\includegraphics[width=20pc,angle=0]{chapter4/terminator_iCLy.pdf}\\
 \end{center}
 \caption{Results of the terminator ``toy"-chemistry test. Snapshot of the total column integrated, weighted sum of the species,$\ \left< Cl_y \right> = \left< Cl \right> + \left< 2Cl_2 \right>$, in kg/kg, at day 15 of the moist baroclinic wave test. (Top) CAM-SE, (Bottom) CAM-SE-CSLAM.}
 \label{fig:term}
@@ -189,9 +189,9 @@ A pair of 20 year-long AMIP type simulations are performed, using CAM, version 6
 
 To assist in identifying whether a particular precipitation pattern is spurious, an $F2000climo$ simulation is carried out using the finite-volume dynamical core that uses a regular latitude-longitude $0.9^{\circ}\times 1.25^\circ$ grid \citep[CAM-FV; $f09$ grid; ][]{CAM5}. CAM-FV is the default low resolution model in CESM2.0, and with its smoothly varying grid, does not suffer from the Quadrature Node Problem (Section \ref{sec:nodeproblem}). Figure~\ref{fig:AMIP-global} shows the global precipitation fields in CAM-SE, CAM-SE-CSLAM and CAM-FV, compared to an observational dataset, the Global Precipitation Climatology Project (GPCP; 1979-2003) gridded dataset \citep{H2001JH}. The magnitude of the precipitation rates in all three models are higher than the GPCP dataset, primarily over land in the Tropics (note the lack of red contours in the GPCP dataset), which should be interpreted cautiously due to widely-accepted issues in constructing a reliable, gridded, global precipitation dataset. At lower latitudes, CAM-FV has lower spatial variance, and overall lower magnitudes, compared with CAM-SE. The GPCP dataset indicates that perhaps the precipitation rates in low-latitude mountainous regions in CAM-FV and CAM-SE are larger than in reality. Following suit, the reduction in magnitude and spatial variance in precipitation in these regions in CAM-SE-CSLAM may be interpreted as an improvement over CAM-SE.
 
-\begin{figure}[t]
+\begin{figure}
 \begin{center}
-\noindent\includegraphics[width=14pc,angle=0]{chapter4/AMIP_global.pdf}\\
+\noindent\includegraphics[width=20pc,angle=0]{chapter4/AMIP_global.pdf}\\
 \end{center}
 \caption{Climatological total precipitation rate computed from the final 19 years of a suite of 20 year long AMIP simulations, using CAM-SE (ne30np4), CAM-SE-CSLAM (ne30pg3) and CAM-FV (f09). The top plot is an observational product, the gridded GPCP climatological precipitation dataset.}
 \label{fig:AMIP-global}

@@ -145,6 +145,8 @@ In both experiments, the convective precipitation decreases with resolution at t
 
 CAM, version 5 is documented in \citep{CAM5}. The stratiform scheme has been changed significantly \citep{PETAL2014JCLIM}, including stratus-radiation-turbulence interactions that improves the simulation of marine stratocumulus. Stratiform microphysics have been updated to include prognostic number concentrations of liquid and ice \citep{MG2008JC}. The shallow convection scheme has been replaced with a CIN based mass flux scheme \citep{PB2009JC}, and the planetary boundary layer scheme replaced to incorporate moist turbulence \citep{BC2009JCLIM}.
 
+The CAM-FV dynamical core is still the default, but a convergence study using CAM-SE is discussed here. \cite{ZetAl2014JCb} perform a convergence study using only two grid resolutions, but was intended to evaluate a variable-resolution configuration whose grid resolution straddled these end-member resolutions. They use an aqua-planet configuration, with the same SST configuration as in \cite{W2008TELLUS} \citep[`CONTROL' in][]{NH2000ASL}, and $\Delta t_{phys}$ is fixed at 1800 s at all resolutions. The aqua-planets are spun-up for two months, and an additional two years are simulated.
+
  \begin{table}
  \caption{\cite{ZetAl2014JCb} experimental design and global means.}
  \centering
@@ -163,13 +165,11 @@ Variable & $ne15$ ($222.4$ km) & $ne120$ ($27.8$ km)\\
  \label{tbl:table1-5}
  \end{table}
 
-The CAM-FV dynamical core is still the default, but a convergence study using CAM-SE is discussed here. \cite{ZetAl2014JCb} perform a convergence study using only two grid resolutions, but was intended to evaluate a variable-resolution configuration whose grid resolution straddled these end-member resolutions. They use an aqua-planet configuration, with the same SST configuration as in \cite{W2008TELLUS} \citep[`CONTROL' in][]{NH2000ASL}, and $\Delta t_{phys}$ is fixed at 1800 s at all resolutions. The aqua-planets are spun-up for two months, and an additional two years are simulated.
-
 Table~\ref{tbl:table1-5} shows that global mean statistics in the simulations. Total cloud fraction is remarkably insensitive despite an 8-fold increase in resolution. Convective precipitation decreases in the usual sense with resolution, while stratiform precipitation increases by almost a factor of four. The atmosphere becomes drier with resolution, by about 1 mm water equivalent.
 
 \subsection{CAM6}
 
-Chapter~\ref{sec:chapter6} is a convergence study using CAM, version 6 physics (CAM6; \url{https://ncar.github.io/CAM/doc/build/html/users_guide/index.html}) with the CAM-SE dynamical core containing a new dry mass vertical coordinate \citep{LetAl2018JAMES} and Conservative Semi-Lagrangian Advection Method for tracer advection \citep[CAM-SE-CSLAM; ][]{LTOUNGK2017MWR}. The physics are evaluated on the CSLAM grid \citep{HL2018MWR}. The Cloud Layers Unified by Binormals \citep[CLUBB][]{GETAL2002JAS,BOG2013JCLIM} is an assumed PDF higher order closure model that handles shallow convection, planetary boundary layer mixing and cloud macrophysics. The macrophyiscs are coupled to a two-moment bulk cloud microphysics scheme with prognostic precipitation \citep{MG2}, and microphysics are coupled with a three mode Modular Aerosol Model \citep{MAM}. The gravity wave drag scheme has been replaced with an anisotropic gravity wave drag scheme that uses the orientation of topographic ridges to determine the direction of propagation.
+Chapter~\ref{sec:chapter6} is a convergence study using CAM, version 6 physics (CAM6; \url{https://ncar.github.io/CAM/doc/build/html/users_guide/index.html}) with the CAM-SE dynamical core, a new dry mass vertical coordinate \citep{LetAl2018JAMES} and Conservative Semi-Lagrangian Advection Method for tracer advection \citep[CSLAM; ][]{LTOUNGK2017MWR}. The physics are evaluated on the CSLAM grid \citep{HL2018MWR}. The Cloud Layers Unified by Binormals \citep[CLUBB][]{GETAL2002JAS,BOG2013JCLIM} is an assumed PDF higher order closure model that handles shallow convection, planetary boundary layer mixing and cloud macrophysics. The macrophyiscs are coupled to a two-moment bulk cloud microphysics scheme with prognostic precipitation \citep{MG2}, and microphysics are coupled with a three mode Modular Aerosol Model \citep{MAM}. The gravity wave drag scheme has been replaced with an anisotropic gravity wave drag scheme that uses the orientation of topographic ridges to determine the direction of propagation.
 
  \begin{table}
  \caption{Experimental design and global means from Chapter~\ref{sec:chapter6}.}
@@ -190,4 +190,4 @@ Chapter~\ref{sec:chapter6} is a convergence study using CAM, version 6 physics (
  \label{tbl:table1-6}
  \end{table}
 
-Table~\ref{tbl:table1-6} shows the results of a convergence study in an aqua-planet configuration \citep[`QOBS' SST profile in][]{NH2000ASL}. Total precipitable water, total cloud fraction and deep convective precipitation rate decreases, while stratiform precipitation increases, monotonically with resolution. Resolution sensitivity in CAM6 is similar to all prior model versions in the CAM-lineage
+Table~\ref{tbl:table1-6} shows the results of the convergence study in an aqua-planet configuration \citep[`QOBS' SST profile in][]{NH2000ASL}, with means computed from the last 11 months of 12 month integrations. Total precipitable water, total cloud fraction and deep convective precipitation rate decreases, while stratiform precipitation increases, monotonically with resolution. Resolution sensitivity in CAM6 is similar to all prior model versions in the CAM-lineage

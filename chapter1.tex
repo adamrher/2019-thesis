@@ -143,7 +143,7 @@ In both experiments, the convective precipitation decreases with resolution at t
 
 \subsection{CAM5}
 
-CAM, version 5 (CAM5) is documented in \citep{CAM5}. The stratiform scheme has been changed significantly \citep{PETAL2014JCLIM}, including stratus-radiation-turbulence interactions that improves the simulation of marine stratocumulus. Stratiform microphysics have been updated to include prognostic number concentrations of liquid and ice \citep{MG2008JC}, and is coupled with a three mode Modular Aerosol Model \citep{MAM}. The shallow convection scheme has been replaced with a CIN based mass flux scheme \citep{PB2009JC}, and the planetary boundary layer scheme replaced to incorporate moist turbulence \citep{BC2009JCLIM}. A turbulent mountain stress scheme is implemented parameterize drag arising from sub-grid topography \citep{CAM5}.
+CAM, version 5 (CAM5) is documented in \citep{CAM5}. The stratiform scheme has been changed significantly \citep{PETAL2014JCLIM}, including stratus-radiation-turbulence interactions that improves the simulation of marine stratocumulus. Stratiform microphysics have been updated to include prognostic number concentrations of liquid and ice \citep{MG2008JC}. The shallow convection scheme has been replaced with a CIN based mass flux scheme \citep{PB2009JC}, and the planetary boundary layer scheme replaced to incorporate moist turbulence \citep{BC2009JCLIM}. A turbulent mountain stress scheme is implemented parameterize drag arising from sub-grid topography \citep{CAM5}.
 
 The CAM-FV dynamical core is still the default, but a convergence study using CAM-SE is discussed here. \cite{ZetAl2014JCb} perform a convergence study using only two grid resolutions, but was intended to evaluate a variable-resolution configuration whose grid resolution straddled these end-member resolutions. They use an aqua-planet configuration, with the same SST configuration as in \cite{W2008TELLUS} \citep[`CONTROL' in][]{NH2000ASL}, and $\Delta t_{phys}$ is fixed at 1800 s at all resolutions. The aqua-planets are spun-up for two months, and an additional two years are simulated.
 
@@ -194,9 +194,9 @@ Table~\ref{tbl:table1-6} shows the results of the convergence study in an aqua-p
 
 Compared to CAM4 (Table~\ref{tbl:table1-4}), the CAM6 atmosphere contains more moisture (an increase of about 3 mm water equivalent) and slightly more convective precipitation. This pattern is similar, although the magnitude of the moistening and increase of convective precipitation smaller, to the comparison of the CAM3 and CAM5 aqua-planets.
 
-\subsection{Rules of thumb}
+\subsection{Resolution sensitivity rules of thumb}
 
-Some key findings of approximately 30 years of convergence studies of the NCAR climate model lineage are summarized as follows. In every convergence study reviewed, and where the global mean data are available:
+Some key findings of approximately 30 years of convergence studies of NCAR's climate models is summarized as follows. In every convergence study reviewed, and where the global mean data are available:
 
 \begin{enumerate}
 \item Total precipitable water decreases with resolution.

@@ -29,7 +29,7 @@ The moist bubble test is performed with CAM-SE-CSLAM and coupled to the simple c
 \begin{center}
 \noindent\includegraphics[width=20pc,angle=0]{chapter5/bubble_test.pdf}\\
 \end{center}
-\caption{The magnitude of $\omega$ in the $pg3$ solutions are systematically larger than the $pg2$ solutions, which is primarily a result of the damping effect of integrating the basis functions over a larger control volume.}
+\caption{Minimum $\omega$ from a series of 1-day long moist bubble simulations in which the dynamics grid spacing (top x-axis) and bubble radius (bottom x-axis) are varied by the same factor. The circles are for experiments where $\Delta t_{phys}$ varies according to equation~\eqref{eq:dt-scale}, and the crosses for simulations where $\Delta t_{phys}$ is fixed at 1800 s. The grey lines are the analytically predicted $\omega$, after equation~\eqref{eq:w-scale} scaled to the lowest resolution solutions. The magnitude of $\omega$ in the $pg3$ solutions are systematically larger than the $pg2$ solutions, which is primarily a result of the damping effect of integrating the basis functions over a larger control volume.}
 \label{fig:bubble}
 \end{figure}
 
@@ -39,7 +39,7 @@ To get a a handle on whether the test is useful for understanding more realistic
 
 \begin{figure}[t]
 \begin{center}
-\noindent\includegraphics[width=20pc,angle=0]{chapter5/panel_pdf_dtphys.pdf}\\
+\noindent\includegraphics[width=25pc,angle=0]{chapter5/panel_pdf_dtphys.pdf}\\
 \end{center}
 \caption{Probability density distribution of upward $\omega$ everywhere in the model in the aqua-planets using the $ne30pg2$ grid (Left) and the $ne120pg2$ grid (Right). Figure computed for one year of 6-hourly data. The different colors indicate the physics time-steps used in the runs.}
 \label{fig:pdf-dtphys}
